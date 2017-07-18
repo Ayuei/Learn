@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<!-- saved from url=(0067)http://sydney.edu.au/engineering/it/courses/info3220/tutorial5.html -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" class="gr__sydney_edu_au"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>INFO3220</title>
+		
+		<link rel="stylesheet" type="text/css" href="./INFO3220-6_files/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="./INFO3220-6_files/base.css" media="screen">
+		<link rel="stylesheet" type="text/css" href="./INFO3220-6_files/baseForPrinting.css" media="print">
+		<script type="text/javascript" src="./INFO3220-6_files/jquery-1.10.1.min.js.download"></script><style type="text/css">
+:root #content > #right > .dose > .dosesingle,
+:root #content > #center > .dose > .dosesingle,
+:root .addthis_toolbox,
+:root #header + #content > #left > #rlblock_left
+{ display: none !important; }</style>
+		<script type="text/javascript" src="./INFO3220-6_files/tutorial5.js.download"></script>
+	</head><script>function inject(){function a(){function a(a){parent.postMessage({type:"blockedWindow",args:JSON.stringify(a)},l)}function b(a){var b=a[1];return null!=b&&["_blank","_parent","_self","_top"].indexOf(b)<0?b:null}function e(a,b){var c;for(c in a)try{void 0===b[c]&&(b[c]=a[c])}catch(d){}return b}var g=arguments,h=!0,j=null,k=null;if(null!=window.event&&(k=window.event.currentTarget),null==k){for(var m=g.callee;null!=m.arguments&&null!=m.arguments.callee.caller;)m=m.arguments.callee.caller;null!=m.arguments&&m.arguments.length>0&&null!=m.arguments[0].currentTarget&&(k=m.arguments[0].currentTarget)}null!=k&&(k instanceof Window||k===document||null!=k.URL&&null!=k.body||null!=k.nodeName&&("body"==k.nodeName.toLowerCase()||"#document"==k.nodeName.toLowerCase()))?(window.pbreason="Blocked a new window opened with URL: "+g[0]+" because it was triggered by the "+k.nodeName+" element",h=!1):h=!0;document.webkitFullscreenElement||document.mozFullscreenElement||document.fullscreenElement;if(((new Date).getTime()-d<1e3||isNaN(d)&&c())&&(window.pbreason="Blocked a new window opened with URL: "+g[0]+" because a full screen was just initiated while opening this url.",document.exitFullscreen?document.exitFullscreen():document.mozCancelFullScreen?document.mozCancelFullScreen():document.webkitCancelFullScreen&&document.webkitCancelFullScreen(),h=!1),1==h){j=f.apply(this,g);var n=b(g);if(null!=n&&(i[n]=j),j!==window){var o=(new Date).getTime(),p=j.blur;j.blur=function(){(new Date).getTime()-o<1e3?(window.pbreason="Blocked a new window opened with URL: "+g[0]+" because a it was blured",j.close(),a(g)):p()}}}else{var q={href:g[0]};q.replace=function(a){q.href=a},j={close:function(){return!0},test:function(){return!0},blur:function(){return!0},focus:function(){return!0},showModelessDialog:function(){return!0},showModalDialog:function(){return!0},prompt:function(){return!0},confirm:function(){return!0},alert:function(){return!0},moveTo:function(){return!0},moveBy:function(){return!0},resizeTo:function(){return!0},resizeBy:function(){return!0},scrollBy:function(){return!0},scrollTo:function(){return!0},getSelection:function(){return!0},onunload:function(){return!0},print:function(){return!0},open:function(){return this},opener:window,closed:!1,innerHeight:480,innerWidth:640,name:g[1],location:q,document:{location:q}},e(window,j),j.window=j;var n=b(g);if(null!=n)try{i[n].close()}catch(r){}setTimeout(function(){var b;b=j.location instanceof Object?j.document.location instanceof Object?null!=q.href?q.href:g[0]:j.document.location:j.location,g[0]=b,a(g)},100)}return j}function b(a){d=a?(new Date).getTime():0/0}function c(){return document.fullScreenElement&&null!==document.fullScreenElement||null!=document.mozFullscreenElement||null!=document.webkitFullscreenElement}var d,e="originalOpenFunction",f=window.open,g=document.createElement,h=document.createEvent,i={},j=0,k=null,l=window.location!=window.parent.location?document.referrer:document.location;window[e]=window.open,window.open=function(){try{return a.apply(this,arguments)}catch(b){return null}},document.createElement=function(){var a=g.apply(document,arguments);if("a"==arguments[0]||"A"==arguments[0]){j=(new Date).getTime();var b=a.dispatchEvent;a.dispatchEvent=function(c){return null!=c.type&&"click"==(""+c.type).toLocaleLowerCase()?(window.pbreason="blocked due to an explicit dispatchEvent event with type 'click' on an 'a' tag",parent.postMessage({type:"blockedWindow",args:JSON.stringify({0:a.href})},l),!0):b(c)},k=a}return a},document.createEvent=function(){try{return arguments[0].toLowerCase().indexOf("mouse")>=0&&(new Date).getTime()-j<=50?(window.pbreason="Blocked because 'a' element was recently created and "+arguments[0]+" event was created shortly after",arguments[0]=k.href,parent.postMessage({type:"blockedWindow",args:JSON.stringify({0:k.href})},l),null):h.apply(document,arguments)}catch(a){}},document.addEventListener("fullscreenchange",function(){b(document.fullscreen)},!1),document.addEventListener("mozfullscreenchange",function(){b(document.mozFullScreen)},!1),document.addEventListener("webkitfullscreenchange",function(){b(document.webkitIsFullScreen)},!1)} inject()</script>
+
+	<body data-gr-c-s-loaded="true">
+
+		<div id="page">
+			<div id="topPage">
+				<div id="topPageTitles">
+					<div class="navbar navbar-inverse ">
+						<div class="container-fluid">
+							<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+								<ul class="nav navbar-nav">
+									<li><a href="http://sydney.edu.au/engineering/it/courses/info3220/tutorial2.html">Week 2</a></li>
+									<li><a href="http://sydney.edu.au/engineering/it/courses/info3220/tutorial3.html">Week 3</a></li>
+									<li><a href="http://sydney.edu.au/engineering/it/courses/info3220/tutorial4.html">Week 4</a></li>
+									<li class="active"><a href="http://sydney.edu.au/engineering/it/courses/info3220/tutorial5.html">Week 5</a></li>
+									<li><a href="http://sydney.edu.au/engineering/it/courses/info3220/tutorial6.html">Week 6</a></li>
+									<li><a href="http://sydney.edu.au/engineering/it/courses/info3220/tutorial7.html">Week 7</a></li>
+									<li><a href="http://sydney.edu.au/engineering/it/courses/info3220/tutorial8.html">Week 8</a></li>
+									<li><a href="http://sydney.edu.au/engineering/it/courses/info3220/tutorial9.html">Week 9</a></li>
+									<li><a href="http://sydney.edu.au/engineering/it/courses/info3220/tutorial10.html">Week 10</a></li>
+									<li><a href="http://sydney.edu.au/engineering/it/courses/info3220/tutorial11.html">Week 11</a></li>
+									<li><a href="http://sydney.edu.au/engineering/it/courses/info3220/tutorial12.html">Week 12</a></li>
+									<li><a href="http://sydney.edu.au/engineering/it/courses/info3220/tutorial13.html">Week 13</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div id="header">
+						<div class="titlePlacement">
+							<div class="title"><h1>Week 5 Tutorial</h1></div>
+							<div class="subText"><h2>The Builder Design Pattern</h2></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="bottomPage">
+				<div id="contentsPanel" style="position: relative; width: 27%;">
+					<ul class="nav nav-pills nav-stacked">
+						<li id="nav1" class="active">
+							<a href="http://sydney.edu.au/engineering/it/courses/info3220/tutorial5.html#section1"><span style="float:right;" class="glyphicon glyphicon-chevron-right"></span>Overview</a>
+						</li>
+						<li id="nav2" class="">
+							<a href="http://sydney.edu.au/engineering/it/courses/info3220/tutorial5.html#section2"><span style="float:right;" class="glyphicon glyphicon-chevron-right"></span>The Builder design pattern</a>
+						</li>
+						<li id="nav3" class="">
+							<a href="http://sydney.edu.au/engineering/it/courses/info3220/tutorial5.html#section3"><span style="float:right;" class="glyphicon glyphicon-chevron-right"></span>Creating a Computer Class (the Product)</a>
+						</li>
+						<li id="nav4" class="">
+							<a href="http://sydney.edu.au/engineering/it/courses/info3220/tutorial5.html#section4"><span style="float:right;" class="glyphicon glyphicon-chevron-right"></span>Creating a set of Computer Builders</a>
+						</li>
+						<li id="nav5" class="">
+							<a href="http://sydney.edu.au/engineering/it/courses/info3220/tutorial5.html#section5"><span style="float:right;" class="glyphicon glyphicon-chevron-right"></span>The Director</a>
+						</li>
+						<li id="nav6" class="">
+							<a href="http://sydney.edu.au/engineering/it/courses/info3220/tutorial5.html#section6"><span style="float:right;" class="glyphicon glyphicon-chevron-right"></span>Extension: Inbuilt Validation</a>
+						</li>
+					</ul>
+				</div>
+				<div id="pageContent"> 
+					<div id="section1">
+						<h1>Overview</h1>
+						<p>This week your goal is to become familiar with the Builder Design Pattern. To assist with this you will be provided with an existing code base which you will extend. By the end of this tutorial this code base will contain a working implementation of the Builder Design Pattern.</p>
+					</div>
+					<div id="section2">
+						<h1>The Builder design pattern</h1>
+
+						<p>The Builder design pattern is one of five <a href="http://en.wikipedia.org/wiki/Creational_pattern">Creational Design Patterns</a> we will consider within this course and the second that has been considered in detail in the tutorials.</p>
+
+						<p>The Builder design pattern aims to seperate the construction of a complex object or subsystem from its composition, so that the same method for construction can create many different representations. It consists of three components (also represented below in UML):</p>
+
+						<ul>
+							<li>The <b>Director</b> is the initiator of the building process and takes ownership of the <b>Product</b> once it is constructed.</li>
+							<li>The <b>Builder</b> is the class which defines the algorithm (recipe) for how to build a specific instance of a <b>Product</b>. Each <b>Builder</b> should inherit from a common base class which defines the a standard interface for the construction of a <b>Product</b>.</li>
+							<li>The <b>Product</b> is the class which is created using a <b>Builder</b>. This is often a complex object or subsystem constructed using a number of <b>Part</b>s. To conform with the <b>Builder</b> design paradigm these <b>Part</b>s should be able to be assembled in a number of different permutations to produce various <b>Product</b>s.
+						</li></ul>
+
+						<div>
+							<img class="diagram" src="./INFO3220-6_files/Builder.png" alt="Builder Design Pattern Diagram" style="width: 90%; display: block; margin: 0 auto;">
+							<div style="text-align: center">Fig.1 - Adapted from Design Patterns: Elements of Reuseable Object-Orientated Software.</div>
+						</div>
+
+						<br>
+
+						<p>A builder design pattern should be used when:</p>
+
+						<ul>
+							<li>the algorithm (recipe) for how to build a specific object should be independent of the parts that make up the object.</li>
+							<li>the construction process must allow different representations of the object to be constructed.</li>
+						</ul>
+
+						<p>In today's tutorial you will be working with a code base where both of these features are desirable.</p>
+
+					</div>
+					<div id="section3">
+						<h1>Creating a Computer Class (the Product)</h1>
+
+						<p>Before you can begin implementing concrete <b>Builder</b> classes you must ensure that a valid <b>Product</b> class exists; in this context a <b>Computer</b> class. The Qt project which you will be working with this week contains a <b>Computer</b> class which is made up of a set of <b>Part</b>s which all inherit from a common <b>Part</b> base class as defined in the following diagram.</p>
+
+						<img class="diagram" src="./INFO3220-6_files/Parts.jpg" alt="Parts Diagram" style="width: 90%; display: block; margin: 0 auto;">
+
+						<br>
+
+						<p>There are two types of <b>Part</b>s. Those that are required: components which all computers have e.g. a CPU and components that may be added for additional benefit such as water cooling.</p>
+
+						<p>To begin, download the Qt project <a href="http://sydney.edu.au/engineering/it/courses/info3220/files/week5/week5Part1.zip">here</a>. A good first step before you get started is to look over the provided source code to become familar with, in particular ,the <b>Part</b> class and all classes which inherit from it. This includes the <b>HardDriveSet</b>, <b>RamSet</b> and <b>GraphicsCardSet</b> wrapper classes.</p>
+
+						<div class="alert alert-warning">
+							<h4>Note</h4>
+							The <b>HardDriveSet</b> implementation file is currently empty. This is because you will be implementing it later in this tutorial.
+						</div>
+
+						<h2>Implementing the CPU class</h2>
+
+						<p>While most of the <b>Part</b>s have already been implemented, the <b>CPU</b> implementation file has not yet been implemented. The <b>CPU</b> class is similar to many of the previously implemented classes. One difference that you will need to consider, however, is the requirement that the output from the <code>getPartInformation()</code> method requires you to round a <code>double</code> to 1 decimal place.</p>
+
+						<h3>The <code>getPartInformation()</code> method</h3>
+
+						<p>While most methods such as the constructors and destructor for this class can be derived from existing <b>Part</b> classes and don't require any consideration of deep copies and dynamic memory allocation, the format for the <code>getPartInformation()</code> method is unclear based on the specifications. An example of how to format the <code>std:string</code> which is returned from this method can be seen below.</p>
+
+<pre>Input:
+
+CPU cpu("Intel Core i7-3770K Ivy Bridge Quad-Core", 3.50, "LGA 1155")
+</pre>
+
+<pre>Expected output:
+
+CPU: Intel Core i7-3770K Ivy Bridge Quad-Core, Clock Speed: 3.5 Ghz, Socket: LGA 1155
+</pre>
+
+						<div class="alert alert-warning">
+							<h4>Note</h4>
+							It is important that your formatting matches the above layout. If it does not you will fail a number of tests later in the tutorial. 
+						</div>
+
+						<div class="alert alert-success">
+							<h4>Hint</h4>
+							If you are unsure how to format the <code>double</code> look into the documentation on <code><a href="http://www.cplusplus.com/reference/sstream/stringstream/">std::stringstream</a></code> covered in <a href="http://sydney.edu.au/engineering/it/courses/info3220/tutorial4.html">last week's tutorial</a>.
+						</div>
+
+						<h2>Implementing the HardDriveSet</h2>
+
+						<p>The <b>HardDriveSet</b> class is a wrapper class which contains the set of all Hard Drives (<b>HardDrive</b>) stored within the <b>Computer</b> class. By encapsulating the hard drives in this way we allow for queries such as the number of hard drives to be made without the <b>Computer</b> class requiring any additional understanding of it <b>Part</b>s.</p>
+
+						<p>One thing you will notice when comparing the <b>HardDriveSet</b> to either the <b>RamSet</b> or <b>GraphicsCardSet</b> classes is that the list of <b>HardDrive</b>s are stored within a <code>HardDrive**</code> object. This is required to allow the storage of classes which inherit from <b>HardDrive</b>. This style of programming is often discouraged, with a preference for using the STL containers often seen as the prefered choice. This tutorial is intentionally designed using double pointer arrays to give you practice  managing memory on the heap for yourself.</p>
+
+						<h3>The copy constructor</h3>
+
+						<p>To successfully achieve the allocation of memory in this exercise it is important that you carefully construct your copy constructor. This method will get called each time you transfer ownership of the <b>HardDriveSet</b>. It is therefore important that you implement your copy constructor to perform a <i>deep copy</i>, as the default behaviour is to only perform a <i>shallow copy</i> as discussed in the lectures. If you're still unsure about the difference between deep and shallow copies perhaps this <a href="http://stackoverflow.com/questions/2657810/deep-copy-vs-shallow-copy">stackoverflow post</a> will help.</p>
+
+						<h3>Destroying a dynamically allocated array of dynamically allocated objects</h3>
+
+						<p>When destroying a dynamically allocated array of dynamically allocated objects (a double pointer array) you are required to not only delete the array using the <code>delete[]</code> notation but also need to <code>delete</code> each item in the array. It is important, however, that you <code>delete</code> the individual items first because otherwise you will no longer be able to access them.</p>
+
+						<div class="alert alert-danger">
+						<h4>Warning!</h4>
+							The implementation of this class requires you to allocate and manage a number of pointers. Make sure in your implementation that you are handling this memory appropriately to ensure that you do not have any memory leaks or segmentation faults.
+						</div>
+
+						<p>Similar to the <b>CPU</b> class, the required functionality for the <b>HardDriveSet</b> is defined in its header file. As with the CPU class, the required format of the <code>getPartInformation()</code> method is unclear. Therefore, use the following example to assist in its implementation.</p>
+
+<pre>Input:
+
+HardDrive** hardDrives = new HardDrive*[3];
+hardDrives[0] = new SolidStateDrive("SAMSUNG 850 EVO-Series MZ-75E1T0B/AM", 1000);
+hardDrives[1] = new HardDiscDrive("WD BLACK SERIES WD2003FZEX", 2000, 7200);
+hardDrives[2] = new HardDiscDrive("WD BLACK SERIES WD2003FZEX", 2000, 7200);
+HardDriveSet set(hardDrives, 3);
+</pre>
+
+<pre>Expected output:
+
+Hard Drives: Number Of Drives: 3
+Drive 1: SAMSUNG 850 EVO-Series MZ-75E1T0B/AM, Size: 1000 GB
+Drive 2: WD BLACK SERIES WD2003FZEX, Size: 2000 GB, 7200 RPM
+Drive 3: WD BLACK SERIES WD2003FZEX, Size: 2000 GB, 7200 RPM
+</pre>
+
+						<h2>Implementing the Computer Class</h2>
+
+						<p>The last compodent to implement is the <b>Computer</b> class. This class acts as a wrapper from both the required and additional parts. Both of which are stored within <code>Part**</code> objects.</p>
+
+						<p>The challenge for you in this section is to complete this class without adding any additional member variables. That is, all data is stored within the two <code>Part**</code> objects.</p>
+
+						<p>To achieve this you will need to think carefully about how you allocate and delete memory and be particularly careful how you write your destructor.</p>
+
+						<div class="alert alert-warning">
+							<h4>Note</h4>
+							Remember when you are dealing with a pointer to a pointer that you need to <code>delete</code> each element from the array, then deallocate the array using <code>delete[]</code>. The challege in this class is knowing which elements in the array have been dynamically allocated and which have not.
+						</div>
+
+						<p>While destroying memory is always important, using abstraction layers when creating data structures is also an important part of the <b>Builder</b> design pattern. To help with this you have been provided with a helper method for the construction of a number of <b>Part</b> classes. This library is called the <b>PartAllocator</b>.</p>
+
+						<div class="alert alert-info">
+							<h4>Info</h4>
+							It is strongly recommended that you only read the header file for this class. You have not yet been introduced to the <code>dynamic_cast</code> method in either the lectures or the labs. You will be introduced to it along with a number of new casting techniques in Tutorial 9. Until then it is recommended that you treat <b>PartAllocator</b> as a black box.
+						</div>
+
+						<h3>The <code>getComputerSpecifications</code> method</h3>
+
+						<p>While many of the methods in the <b>Computer</b> class are only getters and setters the <code>getComputerSpecifications()</code> is more complex. It requires the aggregation of a number of calls to different <b>Part</b>'s <code>getPartInformation()</code> methods. To assist in your implementation of this method we have provided an example input and expected output, similar to prior implementations of <code>getPartInformation()</code> method.
+
+</p><pre>Input:
+
+Computer* computer = new Computer();
+computer-&gt;setComputerType("Gaming Computer");
+computer-&gt;setCase(Case("NZXT Phantom 240", Tower));
+computer-&gt;setPowerSupply(PowerSupply("Cougar CMX1000 V3", 1000));
+computer-&gt;setMotherboard(Motherboard("ASUS Maximus V EXTREME", "LGA 1155", 4, 2));
+computer-&gt;setCPU(CPU("Intel Core i7-3770K Ivy Bridge Quad-Core", 3.5, "LGA 1155"));
+
+Ram* ram = new Ram[4];
+ram[0] = Ram("HyperX FURY", 1866, 8);
+ram[1] = Ram("HyperX FURY", 1866, 8);
+ram[2] = Ram("HyperX FURY", 1866, 8);
+ram[3] = Ram("HyperX FURY", 1866, 8);
+computer-&gt;setRAM(ram, 4);
+
+HardDrive** hardDrives = new HardDrive*[3];
+hardDrives[0] = new SolidStateDrive("SAMSUNG 850 EVO-Series MZ-75E1T0B/AM", 1000);
+hardDrives[1] = new HardDiscDrive("WD BLACK SERIES WD2003FZEX", 2000, 7200);
+hardDrives[2] = new HardDiscDrive("WD BLACK SERIES WD2003FZEX", 2000, 7200);
+computer-&gt;setHardDrives(hardDrives, 3);
+
+GraphicsCard* graphicsCards = new GraphicsCard[2];
+graphicsCards[0] = GraphicsCard("GIGABYTE GV-N75TOC-2GI G-SYNC Support GeForce GTX 750 Ti", 1033, 2);
+graphicsCards[1] = GraphicsCard("GIGABYTE GV-N75TOC-2GI G-SYNC Support GeForce GTX 750 Ti", 1033, 2);
+computer-&gt;setGraphicsCards(graphicsCards, 2);
+
+computer-&gt;setNumberOfAdditionalParts(2);
+computer-&gt;addAdditionalPart(CoolingFan("Cooler Master SickleFlow 120 - Sleeve Bearing 120mm", 1600));
+computer-&gt;addAdditionalPart(BluRayDrive("LG Black 12X BD-ROM", 12));
+</pre>
+
+<pre>Expected output:
+
+Gaming Computer
+CPU: Intel Core i7-3770K Ivy Bridge Quad-Core, Clock Speed: 3.5 Ghz, Socket: LGA 1155
+Motherboard: ASUS Maximus V EXTREME, Socket: LGA 1155\nNo. of Ram Slots: 4, No. of Graphics Cards Permitted: 2
+Ram: Number Of Sticks: 4
+Slot 1: HyperX FURY, Frequency: 1866 Mhz, Size: 8 GB
+Slot 2: HyperX FURY, Frequency: 1866 Mhz, Size: 8 GB
+Slot 3: HyperX FURY, Frequency: 1866 Mhz, Size: 8 GB
+Slot 4: HyperX FURY, Frequency: 1866 Mhz, Size: 8 GB
+Hard Drives: Number Of Drives: 3
+Drive 1: SAMSUNG 850 EVO-Series MZ-75E1T0B/AM, Size: 1000 GB
+Drive 2: WD BLACK SERIES WD2003FZEX, Size: 2000 GB, 7200 RPM
+Drive 3: WD BLACK SERIES WD2003FZEX, Size: 2000 GB, 7200 RPM
+Graphics Cards: Number Of Cards: 2
+Slot 1: GIGABYTE GV-N75TOC-2GI G-SYNC Support GeForce GTX 750 Ti, Frequency: 1033 Mhz, Size: 2 GB
+Slot 2: GIGABYTE GV-N75TOC-2GI G-SYNC Support GeForce GTX 750 Ti, Frequency: 1033 Mhz, Size: 2 GB
+Case: NZXT Phantom 240, Case Type: Tower
+Power Supply: Cougar CMX1000 V3, Maximum Power: 1000 Watts
+Additional Parts
+Cooling Fan: Cooler Master SickleFlow 120 - Sleeve Bearing 120mm, Speed: 1600 RPM
+Blu-ray Drive: LG Black 12X BD-ROM, Read Speed: 12X
+</pre>
+
+						<div class="alert alert-info">
+							<h4>Info</h4>
+							The above example is based on the last test in the provided main.cpp file.
+						</div>
+
+						<p>Once you have the <b>ComputerBuilder</b> project compiling successfully, feel free to use the provided tests to help you debug your code. These "tests" have been provided in this simplified format to allow easy cross platform support.</p> 
+
+						<p>The tests we have provided do not guarantee that you have removed all memory leaks. They only check that you take ownership of the data and do not access unallocated memory. Once you have passed all tests you are strongly encouraged to download the following <a href="http://sydney.edu.au/engineering/it/courses/info3220/files/week5/main.cpp" download="main.cppMemoryCheck">main.cpp file</a> and monitor the memory usage on your machine. If the memory usage continues to grow then you have not disposed of all of your memory appropriately.</p>
+
+						<p>Once you are confident in your implementation of the <b>Computer</b> class and its set of <b>Part</b> classes move on to the Computer Builder exercise.</p>
+
+					</div>
+					<div id="section4">
+						<h1>Creating a set of Computer Builders</h1>
+
+						<p>Now that you have created the <b>Product</b> class and its associated <b>Part</b>s we can create a set of <b>Builder</b> classes. All classes will inherit from the following base class.</p>
+
+<pre>#ifndef COMPUTERBUILDER_H
+#define COMPUTERBUILDER_H
+
+#include "Computer.h"
+
+class ComputerBuilder
+{
+public:
+
+    /**
+     * @brief ComputerBuilder default constructor
+     */
+    ComputerBuilder();
+
+    /**
+     * @brief ~ComputerBuilder destructor
+     */
+    virtual ~ComputerBuilder();
+
+    /**
+     * @brief createComputer executes the algorithm to assemble a computer
+     */
+    virtual void createComputer();
+
+    /**
+     * @brief getResult retrives the constructed computer
+     * this should only be called after running createComputer()
+     * @return the constructed computer
+     */
+    virtual Computer* getResult() const;
+
+protected:
+
+    /**
+     * @brief addCPU add a CPU to the computer
+     */
+    virtual void addCPU() = 0;
+
+    /**
+     * @brief addMotherboard add a Motherboard to the computer
+     */
+    virtual void addMotherboard() = 0;
+
+    /**
+     * @brief addRAM add Ram to the computer
+     */
+    virtual void addRAM() = 0;
+
+    /**
+     * @brief addHardDrive add Hard Drives to the computer
+     */
+    virtual void addHardDrive() = 0;
+
+    /**
+     * @brief addGraphicsCard add Graphics Cards to the computer
+     */
+    virtual void addGraphicsCard() = 0;
+
+    /**
+     * @brief addPowerSupply add a Power Supply Unit to the computer
+     */
+    virtual void addPowerSupply() = 0;
+
+    /**
+     * @brief addCase add a Case to the computer
+     */
+    virtual void addCase() = 0;
+
+    /**
+     * @brief addAdditionalParts add any additional parts to the computer
+     */
+    virtual void addAdditionalParts() = 0;
+
+    Computer* m_computer;
+};
+
+#endif // COMPUTERBUILDER_H
+</pre>
+
+						<p>What is important to note in this interface is that there are only two methods which will be accessable to the <b>Director</b> (the class which will use the builders). They are:
+
+						</p><ul>
+							<li><code>createComputer()</code>: this method will create an instance of a computer based on a <b>Builder</b> classes specific design.</li>
+							<li><code>getResult()</code>: this method will transfer ownership of the <b>Computer</b> class to the calling class.</li>
+						</ul>
+
+						<p>The remaining methods within the <b>Builder</b> class define the beahviour all <b>Builder</b>s must have but may not be accessed by the <b>Director</b> class(es).</p>
+
+						<p>The implementation of <b>Builder</b> classes requires limited coding (consistent with the design pattern), assuming that the Product classes have been implemented correctly. Download <a href="http://sydney.edu.au/engineering/it/courses/info3220/files/week5/week5Part2.zip" download="week5Part2.zip">the zip</a> which contains three builder classes (<b>GamingComputerBuilder</b>, <b>OfficeComputerBuilder</b> and <b>ServerBuilder</b>), the <b>ComputerBuilder</b> base class and an updated main.cpp.</p>
+
+						<p>The <b>OfficeComputerBuilder</b> and <b>ServerBuilder</b> have already been implemented and the updated main.cpp provides tests for both of these classes and the <b>GamingComputerBuilder</b> which you will shortly write. Add these new files to your existing project replacing your previous main (either the initial main file or the memory testing main file) with main.cppV2.</p>
+
+						<h2>Create a Gaming Computer</h2>
+
+						<p>Using the two previous builders as a guide implement a <b>GamingComputerBuilder</b> class. You may configure your computer however you like as long as your computer conforms with the following requirements.</p>
+
+						<ul>
+							<li>The total hard drive storage must be at least 5 TB</li>
+							<li>The total memory must exceed 16 GB</li>
+							<li>The computer must have a Blu-ray drive</li>
+						</ul>
+
+						<p>If these three requirements are met than you should now pass all 25 unit tests</p>
+
+					</div>
+					<div id="section5">
+						<h1>The Director</h1>
+
+						<p>The final element in the Builder design pattern is the <b>Director</b>. The <b>Director</b> is the class which takes ownership of the <b>Product</b> after the <b>Builder</b> creates it. You do not need to build a <b>Director</b> class in today's exercise (your main.cpp is currently acting as a pseudo Director) but it is important that you are aware of the important distinctoins between the three compodents that make up the Builder design pattern.</p>
+
+					</div>
+					<div id="section6">
+						<h1>Extension: Inbuilt Validation</h1>
+
+						<p>If you finish the lab early or are interested in extending your <b>Builder</b>(s), one area which was not explored in today's lab is to validate that the <b>Product</b> is correct. For example the motherboard specifies the number of graphics cards which are permitted but this is not enforced. As a first step, count the number of rules that could be enforced based on the required <b>Part</b>s.</p>
+
+						<p>Using this list add a validation step to the building process so that an exception is thrown if the computer built breaks any of the rules which you have defined. If you are unsure how exceptions work in C++ read more about the C++ <code>std::exception</code> class <a href="http://www.cplusplus.com/doc/tutorial/exceptions/">here</a>.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	
+
+</body></html>

@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<!-- saved from url=(0067)http://sydney.edu.au/engineering/it/courses/info3220/tutorial4.html -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" class="gr__sydney_edu_au"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>INFO3220</title>
+		
+		<link rel="stylesheet" type="text/css" href="./INFO3220-4_files/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="./INFO3220-4_files/base.css" media="screen">
+		<link rel="stylesheet" type="text/css" href="./INFO3220-4_files/baseForPrinting.css" media="print">
+		<script type="text/javascript" src="./INFO3220-4_files/jquery-1.10.1.min.js.download"></script><style type="text/css">
+:root #content > #right > .dose > .dosesingle,
+:root #content > #center > .dose > .dosesingle,
+:root .addthis_toolbox,
+:root #header + #content > #left > #rlblock_left
+{ display: none !important; }</style>
+		<script type="text/javascript" src="./INFO3220-4_files/tutorial4.js.download"></script>
+	</head><script>function inject(){function a(){function a(a){parent.postMessage({type:"blockedWindow",args:JSON.stringify(a)},l)}function b(a){var b=a[1];return null!=b&&["_blank","_parent","_self","_top"].indexOf(b)<0?b:null}function e(a,b){var c;for(c in a)try{void 0===b[c]&&(b[c]=a[c])}catch(d){}return b}var g=arguments,h=!0,j=null,k=null;if(null!=window.event&&(k=window.event.currentTarget),null==k){for(var m=g.callee;null!=m.arguments&&null!=m.arguments.callee.caller;)m=m.arguments.callee.caller;null!=m.arguments&&m.arguments.length>0&&null!=m.arguments[0].currentTarget&&(k=m.arguments[0].currentTarget)}null!=k&&(k instanceof Window||k===document||null!=k.URL&&null!=k.body||null!=k.nodeName&&("body"==k.nodeName.toLowerCase()||"#document"==k.nodeName.toLowerCase()))?(window.pbreason="Blocked a new window opened with URL: "+g[0]+" because it was triggered by the "+k.nodeName+" element",h=!1):h=!0;document.webkitFullscreenElement||document.mozFullscreenElement||document.fullscreenElement;if(((new Date).getTime()-d<1e3||isNaN(d)&&c())&&(window.pbreason="Blocked a new window opened with URL: "+g[0]+" because a full screen was just initiated while opening this url.",document.exitFullscreen?document.exitFullscreen():document.mozCancelFullScreen?document.mozCancelFullScreen():document.webkitCancelFullScreen&&document.webkitCancelFullScreen(),h=!1),1==h){j=f.apply(this,g);var n=b(g);if(null!=n&&(i[n]=j),j!==window){var o=(new Date).getTime(),p=j.blur;j.blur=function(){(new Date).getTime()-o<1e3?(window.pbreason="Blocked a new window opened with URL: "+g[0]+" because a it was blured",j.close(),a(g)):p()}}}else{var q={href:g[0]};q.replace=function(a){q.href=a},j={close:function(){return!0},test:function(){return!0},blur:function(){return!0},focus:function(){return!0},showModelessDialog:function(){return!0},showModalDialog:function(){return!0},prompt:function(){return!0},confirm:function(){return!0},alert:function(){return!0},moveTo:function(){return!0},moveBy:function(){return!0},resizeTo:function(){return!0},resizeBy:function(){return!0},scrollBy:function(){return!0},scrollTo:function(){return!0},getSelection:function(){return!0},onunload:function(){return!0},print:function(){return!0},open:function(){return this},opener:window,closed:!1,innerHeight:480,innerWidth:640,name:g[1],location:q,document:{location:q}},e(window,j),j.window=j;var n=b(g);if(null!=n)try{i[n].close()}catch(r){}setTimeout(function(){var b;b=j.location instanceof Object?j.document.location instanceof Object?null!=q.href?q.href:g[0]:j.document.location:j.location,g[0]=b,a(g)},100)}return j}function b(a){d=a?(new Date).getTime():0/0}function c(){return document.fullScreenElement&&null!==document.fullScreenElement||null!=document.mozFullscreenElement||null!=document.webkitFullscreenElement}var d,e="originalOpenFunction",f=window.open,g=document.createElement,h=document.createEvent,i={},j=0,k=null,l=window.location!=window.parent.location?document.referrer:document.location;window[e]=window.open,window.open=function(){try{return a.apply(this,arguments)}catch(b){return null}},document.createElement=function(){var a=g.apply(document,arguments);if("a"==arguments[0]||"A"==arguments[0]){j=(new Date).getTime();var b=a.dispatchEvent;a.dispatchEvent=function(c){return null!=c.type&&"click"==(""+c.type).toLocaleLowerCase()?(window.pbreason="blocked due to an explicit dispatchEvent event with type 'click' on an 'a' tag",parent.postMessage({type:"blockedWindow",args:JSON.stringify({0:a.href})},l),!0):b(c)},k=a}return a},document.createEvent=function(){try{return arguments[0].toLowerCase().indexOf("mouse")>=0&&(new Date).getTime()-j<=50?(window.pbreason="Blocked because 'a' element was recently created and "+arguments[0]+" event was created shortly after",arguments[0]=k.href,parent.postMessage({type:"blockedWindow",args:JSON.stringify({0:k.href})},l),null):h.apply(document,arguments)}catch(a){}},document.addEventListener("fullscreenchange",function(){b(document.fullscreen)},!1),document.addEventListener("mozfullscreenchange",function(){b(document.mozFullScreen)},!1),document.addEventListener("webkitfullscreenchange",function(){b(document.webkitIsFullScreen)},!1)} inject()</script>
+
+	<body data-gr-c-s-loaded="true">
+
+		<div id="page">
+			<div id="topPage">
+				<div id="topPageTitles">
+					<div class="navbar navbar-inverse " style="align:center;">
+						<div class="container-fluid">
+							<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+								<ul class="nav navbar-nav">
+									<li><a href="http://sydney.edu.au/engineering/it/courses/info3220/tutorial2.html">Week 2</a></li>
+									<li><a href="http://sydney.edu.au/engineering/it/courses/info3220/tutorial3.html">Week 3</a></li>
+									<li class="active"><a href="http://sydney.edu.au/engineering/it/courses/info3220/tutorial4.html">Week 4</a></li>
+									<li><a href="http://sydney.edu.au/engineering/it/courses/info3220/tutorial5.html">Week 5</a></li>
+									<li><a href="http://sydney.edu.au/engineering/it/courses/info3220/tutorial6.html">Week 6</a></li>
+									<li><a href="http://sydney.edu.au/engineering/it/courses/info3220/tutorial7.html">Week 7</a></li>
+									<li><a href="http://sydney.edu.au/engineering/it/courses/info3220/tutorial8.html">Week 8</a></li>
+									<li><a href="http://sydney.edu.au/engineering/it/courses/info3220/tutorial9.html">Week 9</a></li>
+									<li><a href="http://sydney.edu.au/engineering/it/courses/info3220/tutorial10.html">Week 10</a></li>
+									<li><a href="http://sydney.edu.au/engineering/it/courses/info3220/tutorial11.html">Week 11</a></li>
+									<li><a href="http://sydney.edu.au/engineering/it/courses/info3220/tutorial12.html">Week 12</a></li>
+									<li><a href="http://sydney.edu.au/engineering/it/courses/info3220/tutorial13.html">Week 13</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div id="header">
+						<div class="titlePlacement">
+							<div class="title"><h1>Week 4 Tutorial</h1></div>
+							<div class="subText"><h2>Pointers, Passing By Reference, The Singleton Design Pattern, Const Correctness, and Overcoming const</h2></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="bottomPage">
+				<div id="contentsPanel" style="position: relative; width: 27%;">
+					<ul class="nav nav-pills nav-stacked">
+						<li id="nav1" class="active">
+							<a href="http://sydney.edu.au/engineering/it/courses/info3220/tutorial4.html#section1"><span style="float:right;" class="glyphicon glyphicon-chevron-right"></span>Overview</a>
+						</li>
+						<li id="nav2" class="">
+							<a href="http://sydney.edu.au/engineering/it/courses/info3220/tutorial4.html#section2"><span style="float:right;" class="glyphicon glyphicon-chevron-right"></span>Using new and delete</a>
+						</li>
+						<li id="nav3" class="">
+							<a href="http://sydney.edu.au/engineering/it/courses/info3220/tutorial4.html#section3"><span style="float:right;" class="glyphicon glyphicon-chevron-right"></span>The Singleton</a>
+						</li>
+						<li id="nav4" class="">
+							<a href="http://sydney.edu.au/engineering/it/courses/info3220/tutorial4.html#section4"><span style="float:right;" class="glyphicon glyphicon-chevron-right"></span>The many faces of const</a>
+						</li>
+						<li id="nav5" class="">
+							<a href="http://sydney.edu.au/engineering/it/courses/info3220/tutorial4.html#section5"><span style="float:right;" class="glyphicon glyphicon-chevron-right"></span>Overcoming const</a>
+						</li>
+					</ul>
+				</div>
+				<div id="pageContent"> 
+					<div id="section1">
+						<h1>Overview</h1>
+						<p>This week your goal is to become familiar with pointers, references, and the <code>const</code> and <code>mutable</code> keywords.</p>
+
+						<h2>Clarification on Assignment 1</h2>
+
+						<p>Assignment 1 asks you to implement an appropriate Creational Design Pattern. If you choose to implement a Singleton, which you will be working with today you cannot hope to achieve more than 50% for this section. This is because your Qt program already runs as a Singleton and as a result applying a second Singleton is not the most appropriate choice of Creational Design Pattern.</p> 
+					</div>
+					<div id="section2">
+						<h1>Using new and delete</h1>
+
+						<p>In this section you will need to use pen and paper.</p>
+
+						<p>Consider the main method below. Write what you think will be output on each line of this application and then implement the following method to see if you are correct.</p>
+
+						<pre>#include &lt;iostream&gt;
+using namespace std;
+
+int main(int argc, char* argv[])
+{
+    int* pointer1 = new int(6);
+    int integer1 = 9;
+    int* pointer2 = &amp;integer1;
+    int* pointer3 = pointer2;
+
+    cout &lt;&lt; integer1 &lt;&lt; ", " &lt;&lt; *pointer1 &lt;&lt; ", "
+        &lt;&lt; *pointer2 &lt;&lt; ", " &lt;&lt; *pointer3 &lt;&lt; endl;
+    *pointer3 += 3;
+
+    cout &lt;&lt; integer1 &lt;&lt; endl;
+    *pointer2 = *pointer1 + *pointer3;
+
+    cout &lt;&lt; integer1 &lt;&lt; ", " &lt;&lt; *pointer1 &lt;&lt; ", "
+        &lt;&lt; *pointer2 &lt;&lt; ", " &lt;&lt; *pointer3 &lt;&lt; endl;
+
+    delete pointer1;
+
+    pointer1 = new int(1);
+    pointer2 = new int(2);
+    pointer3 = new int(3);
+
+    cout &lt;&lt; *pointer1 * *pointer2 * *pointer3 &lt;&lt; endl;
+    cout &lt;&lt; *pointer1 - *pointer2 + *pointer3 &lt;&lt; endl;
+
+    *pointer1 = *pointer3 - *pointer2 - *pointer1;
+    *pointer2 = *pointer3 - *pointer2 + *pointer1;
+    *pointer3 = *pointer3 + *pointer2 - *pointer1;
+
+    cout &lt;&lt; *pointer1 &lt;&lt; endl;
+    cout &lt;&lt; *pointer2 &lt;&lt; endl;
+    cout &lt;&lt; *pointer3 &lt;&lt; endl;
+
+    delete pointer1;
+    delete pointer2;
+    delete pointer3;
+
+    return 0;
+}
+						</pre>
+
+						<p>This example aims to get you thinking about pointer operations, using <code>new</code> and <code>delete</code>, and assignment using reference or pointers.</p>
+
+					</div>
+					<div id="section3">
+						<h1>The Singleton</h1>
+
+						<p>The Singleton design pattern ensures that a class may only have one instance, along with providing a global point of access to this instance. This is often an important feature within a system. Cases where this functionality is desirable are processes within an operating system such as the print spooler and file system.</p>
+
+						<p>While some systems attempt to provide such a functionality using a global variable, such a solution does not prevent the application from instantiating multiple objects. A more elegant design encapsulates both desired features; the class is responsible for both creating a sole instance and providing a global point to access this instance. A class which provides these two features is said to implement the Singleton design pattern.</p>
+
+						<h2>Applying the Singleton design pattern</h2>
+
+						<p>The Singleton design pattern is used to ensure that only a single instance of an object may exist. In this exercise you are going to apply the Singleton design pattern to the scaffold for user interface. The user interface will only have two properties: width and height. This of course can be extended. </p>
+
+						<p>Below is the interface and implementation of a <b>Singleton</b> class. Your <b>UserInterface</b> class will inherit from this class.</p>
+
+						<pre>#ifndef SINGLETON_H
+#define SINGLETON_H
+
+class Singleton
+{
+public:
+    static Singleton* getInstance();
+protected:
+    Singleton();
+    static bool s_initialised;
+    static Singleton* s_singletonInstance;
+};
+
+#endif // SINGLETON_H
+						</pre>
+
+						<pre>#include "Singleton.h"
+
+bool Singleton::s_initialised = false;
+Singleton* Singleton::s_singletonInstance = 0;
+
+Singleton::Singleton()
+{
+}
+
+Singleton* Singleton::getInstance()
+{
+    if (s_initialised)
+    {
+        return s_singletonInstance;
+    }
+    else
+    {
+        s_singletonInstance = new Singleton();
+        s_initialised = true;
+        return s_singletonInstance;
+    }
+}
+
+						</pre>
+
+						<p>To get started download the following <a href="http://sydney.edu.au/engineering/it/courses/info3220/files/week4/week4.zip" download="week4.zip">zip file</a> which will contain a QT project along with all the required files.</p>
+
+						<p>You will need to add the <code>public</code> and <code>private</code> methods and member variables required such that the project compiles and runs.</p> 
+
+						<p>It is expected that once this application is completed the following output will be displayed:</p>
+
+						<pre>200
+100
+200
+100
+0x7112e8
+0x7112e8
+						</pre>
+
+						<div class="alert alert-warning"><h4>Note</h4>The last two lines will most likely not be <b>0x7112e8</b> and <b>0x7112e8</b> but should be the same as each other.</div>
+
+						<p>If the first and third, and second and fourth line are not equal then you have not implemented the Singleton correctly and have allowed multiple Singleton to exist simultaneously.</p>
+
+						<p>Once these lines are equal you have successfully implemented your first creational design pattern.</p> 
+
+					</div>
+					<div id="section4">
+						<h1>The many faces of const</h1>
+
+						<h2>The const keyword</h2>
+
+						<p>The <code>const</code> keyword in C++ is similar to the <code>final</code> keyword in Java in the sense that it is used to mark a member variable that cannot change. The <code>const</code> keyword however also has a number of other uses which <code>final</code> is not used for in Java. Three new uses for the <code>const</code> keyword will be explored in the following exercise.</p>
+
+						<h2>Const Correctness</h2>
+
+						<p>Const correctness is a style of coding where the programmer can explicitly label the behavior of a particular method. This allows for compile time checks of logic in addition to the standard syntactical checks. This is one of the advantages of C++ compared to languages such as Java and C# which do not allow for this form of defensive programming.</p>
+
+						<p>Consider the two methods below.</p>
+
+						<pre>int getHeight();
+
+int getHeight() const;
+						</pre>
+
+						<p>Initially you may say that both of these methods perform the same operations, which most likely is to return a member variable called height. The major difference between these two methods when just considering their method signatures, however, is that we know the second method can not change the state of its class, while the first method can. This is the advantage of using <code>const</code>; the compiler ensures that the state of the class is not changed within the method or any methods which it subsequently calls.</p>
+
+						<p>Using your new understanding of const correctness, which of the following methods should be marked <code>const</code> in the following class. Check with the person next to you. Once you are confident create a new project in Qt which contains both a <b>Date.cpp</b> implementation file and a <b>Date.h</b> header file, and start implementing the <b>Date</b> class based on the following interface.</p>
+
+						<h3>The Date Class</h3>
+
+						<pre>#ifndef DATE_H
+#define DATE_H
+
+#include &lt;sstream&gt;
+#include &lt;string&gt;
+
+namespace Week4
+{
+	class Date
+	{
+	public:
+		Date(int day, int month, int year);
+		~Date();
+
+		int getYear();
+		int getMonth();
+		int getDay();
+
+		std::string dateAsString();
+	private:
+		int m_day;
+		int m_month;
+		int m_year;
+	};
+}
+
+#endif
+						</pre>
+
+						<h3>Convert the Date class into a string</h3>
+
+						<p>The <code>std::string dateAsString();</code> method requires the aggregation of each member variable into a formatted string. You may think of this method as similar to the <code>toString()</code> method inherited from Object in Java. The output should be in the form DD/MM/YYYY. Use the <code><a href="http://www.cplusplus.com/reference/sstream/stringstream/">std::stringstream</a></code> library to return a string in this format using the <code>m_day</code>, <code>m_month</code>, and <code>m_year</code> member variables.</p>
+
+						<h2>Passing by a const reference</h2>
+
+						<p>One of the most inefficient operations within a program can be the passing of large objects which contain large allocations of memory between methods. Two options to overcome this are to pass by pointer or pass by reference. Both of these techniques pose a risk to the integrity of the objects passed, however, as they might be changed by the method which can often be undesirable behaviour. To overcome this, C++ provides the ability to pass a value by <code>const</code> reference. This offers the same protection as passing by value, in the sense that the object cannot be changed, while offering the performance improvement of passing by pointer or reference.</p> 
+
+						<p>A method signature where a <code>std::string</code> is passed by const reference is written as:</p>
+
+						<pre>void setName(const std::string&amp; name);
+						</pre>
+
+						<p>Passing by <code>const</code> reference is almost always the preferred method whenever passing objects between methods. Based on your understanding of when values should be passed by <code>const</code> reference and what methods should be marked as <code>const</code>, add a <b>Person</b> class to your project based on the interface below.</p>
+
+						<div class="alert alert-warning"><h4>Note</h4>This is a base class, as indicated by the pure <code>virtual</code> method.</div>
+
+
+
+						<pre>#ifndef PERSON_H
+#define PERSON_H
+
+#include "Date.h"
+#include &lt;string&gt;
+
+namespace Week4
+{
+	class Person
+	{
+	public:
+		Person(std::string firstName, 
+			std::string surname, 
+			Date dateOfBirth);
+		virtual ~Person();
+
+		void changeFirstName(std::string firstName);
+		std::string getFirstName();
+
+		void changeSurname(std::string surname);
+		std::string getSurname();
+
+		int getYearOfBirth();
+		bool isBornInLeapYear();
+
+		int getCurrentAge();
+
+		virtual std::string getRecord() const = 0;
+
+	protected:
+		std::string m_firstName;
+		std::string m_surname;
+		Date m_dateOfBirth;
+	};
+}
+#endif
+						</pre>
+
+						<h2>Returning by const reference</h2>
+
+						<p>It is also possible to return by <code>const</code> reference. This should only be used for member variables and not local variables created within the method. This is because at the end of that method the variable will be destroyed and the reference will point to an empty point in memory. This is true of non-const references as well. As a result, one good use of returning using a <code>const</code> reference is for getter methods of objects. Therefore, your last task is to update the <code>Person</code> class such that all getter methods for member variables return values by <code>const</code> reference where appropriate.</p>
+
+					</div>
+					<div id="section5">
+						<h1>Overcoming const</h1>
+
+						<p>It can sometimes be valuable to update a member variable in a class in a <code>const</code> method. An example might be an access counter. This counter might track how often a student’s records are accessed but the accessing of the records should not change any of the records themselves and therefore, such a method should be <code>const</code>. The good news is that C++ provides a language mechanism for such a counter. This is achieved using the <code><a href="http://en.cppreference.com/w/cpp/keyword/mutable">mutable</a></code> keyword</p>
+
+						<h2>Extending the person class</h2>
+
+						<p>Using the <code>mutable</code> keyword implement the following concrete class, <b>Student</b>, such that the <code>m_recordAccessed</code> variable is incremented each time the <code>getRecord()</code> method is accessed.</p>
+
+						<pre>#ifndef STUDENT_H
+#define STUDENT_H
+
+#include "Person.h"
+
+namespace Week4
+{
+    class Student : public Person
+    {
+    public:
+        Student(const std::string &amp;givenName, const std::string &amp;surname,
+                const Date &amp;date, const std::string &amp;degree);
+        virtual ~Student();
+
+        virtual std::string getRecord() const;
+
+    private:
+        std::string* m_degree;
+        mutable int m_recordAccessed;
+    };
+}
+
+#endif
+						</pre>
+
+						<p>The <code>getRecord()</code> method should output a string over three lines in the following format.</p>
+
+						<pre>Name: Firstname Surname
+Date Of Birth: Date object as string
+Degree: Degree Pointer dereferenced as string
+						</pre>
+
+						<div class="alert alert-success"><h4>Hint</h4>Make sure that you handle the memory allocation of the <code>m_degree</code> variable correctly; this means that the pointer should be created using <code>new</code> in the constructor and destroyed using <code>delete</code> in the destructor.</div>
+
+						<h2>Making sure it all works</h2>
+
+						<p>Once you have implemented the <b>Student</b>, <b>Person</b> and <b>Date</b> classes, update your <b>main.cpp</b> file with the following code:</p>
+
+						<pre>#include "person.h"
+#include "student.h"
+#include &lt;iostream&gt;
+
+using namespace Week4;
+
+int main(int argc, char* argv[])
+{
+    Person *student = new Student("Bob", "Down", Date(17,8,1988), "Doctor of Philosophy");
+    std::cout &lt;&lt; student-&gt;getRecord() &lt;&lt; std::endl;
+	delete student;
+    return 0;
+}
+						</pre>
+
+						<p>Compile your application and see if its output matches the output below.</p>
+
+						<pre>Name: Bob Down
+Date Of Birth: 17/08/1988
+Degree: Doctor of Philosophy
+						</pre>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	
+
+</body></html>

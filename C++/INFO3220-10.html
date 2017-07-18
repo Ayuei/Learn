@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<!-- saved from url=(0068)http://sydney.edu.au/engineering/it/courses/info3220/tutorial10.html -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" class="gr__sydney_edu_au"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>INFO3220</title>
+		
+		<link rel="stylesheet" type="text/css" href="./INFO3220-10_files/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="./INFO3220-10_files/base.css" media="screen">
+		<link rel="stylesheet" type="text/css" href="./INFO3220-10_files/baseForPrinting.css" media="print">
+		<script type="text/javascript" src="./INFO3220-10_files/jquery-1.10.1.min.js.download"></script><style type="text/css">
+:root #content > #right > .dose > .dosesingle,
+:root #content > #center > .dose > .dosesingle,
+:root .addthis_toolbox,
+:root #header + #content > #left > #rlblock_left
+{ display: none !important; }</style>
+		<script type="text/javascript" src="./INFO3220-10_files/tutorial10.js.download"></script>
+	</head><script>function inject(){function a(){function a(a){parent.postMessage({type:"blockedWindow",args:JSON.stringify(a)},l)}function b(a){var b=a[1];return null!=b&&["_blank","_parent","_self","_top"].indexOf(b)<0?b:null}function e(a,b){var c;for(c in a)try{void 0===b[c]&&(b[c]=a[c])}catch(d){}return b}var g=arguments,h=!0,j=null,k=null;if(null!=window.event&&(k=window.event.currentTarget),null==k){for(var m=g.callee;null!=m.arguments&&null!=m.arguments.callee.caller;)m=m.arguments.callee.caller;null!=m.arguments&&m.arguments.length>0&&null!=m.arguments[0].currentTarget&&(k=m.arguments[0].currentTarget)}null!=k&&(k instanceof Window||k===document||null!=k.URL&&null!=k.body||null!=k.nodeName&&("body"==k.nodeName.toLowerCase()||"#document"==k.nodeName.toLowerCase()))?(window.pbreason="Blocked a new window opened with URL: "+g[0]+" because it was triggered by the "+k.nodeName+" element",h=!1):h=!0;document.webkitFullscreenElement||document.mozFullscreenElement||document.fullscreenElement;if(((new Date).getTime()-d<1e3||isNaN(d)&&c())&&(window.pbreason="Blocked a new window opened with URL: "+g[0]+" because a full screen was just initiated while opening this url.",document.exitFullscreen?document.exitFullscreen():document.mozCancelFullScreen?document.mozCancelFullScreen():document.webkitCancelFullScreen&&document.webkitCancelFullScreen(),h=!1),1==h){j=f.apply(this,g);var n=b(g);if(null!=n&&(i[n]=j),j!==window){var o=(new Date).getTime(),p=j.blur;j.blur=function(){(new Date).getTime()-o<1e3?(window.pbreason="Blocked a new window opened with URL: "+g[0]+" because a it was blured",j.close(),a(g)):p()}}}else{var q={href:g[0]};q.replace=function(a){q.href=a},j={close:function(){return!0},test:function(){return!0},blur:function(){return!0},focus:function(){return!0},showModelessDialog:function(){return!0},showModalDialog:function(){return!0},prompt:function(){return!0},confirm:function(){return!0},alert:function(){return!0},moveTo:function(){return!0},moveBy:function(){return!0},resizeTo:function(){return!0},resizeBy:function(){return!0},scrollBy:function(){return!0},scrollTo:function(){return!0},getSelection:function(){return!0},onunload:function(){return!0},print:function(){return!0},open:function(){return this},opener:window,closed:!1,innerHeight:480,innerWidth:640,name:g[1],location:q,document:{location:q}},e(window,j),j.window=j;var n=b(g);if(null!=n)try{i[n].close()}catch(r){}setTimeout(function(){var b;b=j.location instanceof Object?j.document.location instanceof Object?null!=q.href?q.href:g[0]:j.document.location:j.location,g[0]=b,a(g)},100)}return j}function b(a){d=a?(new Date).getTime():0/0}function c(){return document.fullScreenElement&&null!==document.fullScreenElement||null!=document.mozFullscreenElement||null!=document.webkitFullscreenElement}var d,e="originalOpenFunction",f=window.open,g=document.createElement,h=document.createEvent,i={},j=0,k=null,l=window.location!=window.parent.location?document.referrer:document.location;window[e]=window.open,window.open=function(){try{return a.apply(this,arguments)}catch(b){return null}},document.createElement=function(){var a=g.apply(document,arguments);if("a"==arguments[0]||"A"==arguments[0]){j=(new Date).getTime();var b=a.dispatchEvent;a.dispatchEvent=function(c){return null!=c.type&&"click"==(""+c.type).toLocaleLowerCase()?(window.pbreason="blocked due to an explicit dispatchEvent event with type 'click' on an 'a' tag",parent.postMessage({type:"blockedWindow",args:JSON.stringify({0:a.href})},l),!0):b(c)},k=a}return a},document.createEvent=function(){try{return arguments[0].toLowerCase().indexOf("mouse")>=0&&(new Date).getTime()-j<=50?(window.pbreason="Blocked because 'a' element was recently created and "+arguments[0]+" event was created shortly after",arguments[0]=k.href,parent.postMessage({type:"blockedWindow",args:JSON.stringify({0:k.href})},l),null):h.apply(document,arguments)}catch(a){}},document.addEventListener("fullscreenchange",function(){b(document.fullscreen)},!1),document.addEventListener("mozfullscreenchange",function(){b(document.mozFullScreen)},!1),document.addEventListener("webkitfullscreenchange",function(){b(document.webkitIsFullScreen)},!1)} inject()</script>
+
+	<body data-gr-c-s-loaded="true">
+
+		<div id="page">
+			<div id="topPage">
+				<div id="topPageTitles">
+					<div class="navbar navbar-inverse">
+						<div class="container-fluid">
+							<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+								<ul class="nav navbar-nav">
+									<li><a href="http://sydney.edu.au/engineering/it/courses/info3220/tutorial2.html">Week 2</a></li>
+									<li><a href="http://sydney.edu.au/engineering/it/courses/info3220/tutorial3.html">Week 3</a></li>
+									<li><a href="http://sydney.edu.au/engineering/it/courses/info3220/tutorial4.html">Week 4</a></li>
+									<li><a href="http://sydney.edu.au/engineering/it/courses/info3220/tutorial5.html">Week 5</a></li>
+									<li><a href="http://sydney.edu.au/engineering/it/courses/info3220/tutorial6.html">Week 6</a></li>
+									<li><a href="http://sydney.edu.au/engineering/it/courses/info3220/tutorial7.html">Week 7</a></li>
+									<li><a href="http://sydney.edu.au/engineering/it/courses/info3220/tutorial8.html">Week 8</a></li>
+									<li><a href="http://sydney.edu.au/engineering/it/courses/info3220/tutorial9.html">Week 9</a></li>
+									<li class="active"><a href="http://sydney.edu.au/engineering/it/courses/info3220/tutorial10.html">Week 10</a></li>
+									<li><a href="http://sydney.edu.au/engineering/it/courses/info3220/tutorial11.html">Week 11</a></li>
+									<li><a href="http://sydney.edu.au/engineering/it/courses/info3220/tutorial12.html">Week 12</a></li>
+									<li><a href="http://sydney.edu.au/engineering/it/courses/info3220/tutorial13.html">Week 13</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div id="header">
+						<div class="titlePlacement">
+							<div class="title"><h1>Week 10 Tutorial</h1></div>
+							<div class="subText"><h2>Using C++ Templates and an introduction to the Template Design Pattern</h2></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="bottomPage">
+				<div id="contentsPanel" style="position: relative; width: 27%;">
+					<ul class="nav nav-pills nav-stacked">
+						<li id="nav1" class="active">
+							<a href="http://sydney.edu.au/engineering/it/courses/info3220/tutorial10.html#section1"><span style="float:right;" class="glyphicon glyphicon-chevron-right"></span>Overview</a>
+						</li>
+						<li id="nav2" class="">
+							<a href="http://sydney.edu.au/engineering/it/courses/info3220/tutorial10.html#section2"><span style="float:right;" class="glyphicon glyphicon-chevron-right"></span>Why C++ Templates are not the same as the Template Design Pattern</a>
+						</li>
+						<li id="nav3" class="">
+							<a href="http://sydney.edu.au/engineering/it/courses/info3220/tutorial10.html#section3"><span style="float:right;" class="glyphicon glyphicon-chevron-right"></span>Creating a Templated Stack</a>
+						</li>
+						<li id="nav4" class="">
+							<a href="http://sydney.edu.au/engineering/it/courses/info3220/tutorial10.html#section4"><span style="float:right;" class="glyphicon glyphicon-chevron-right"></span>Using the STL algorithms library</a>
+						</li>
+					</ul>
+				</div>
+				<div id="pageContent"> 
+					<div id="section1">
+						<h1>Overview</h1>
+						<p>This week you will be continuing work on from week 8’s exercise by taking the StringStackQueue and using C++ Templates to turn it into a StackQueue&lt;T&gt;. Once complete you will then be introduced to the C++ algorithms library which should be very useful for your final assignment.</p>
+					</div>
+					<div id="section2">
+						<h1>Why C++ Templates are not the same as the Template Design Pattern</h1>
+
+						<p>The Standard Template library which you were introduced in <a href="http://sydney.edu.au/engineering/it/courses/info3220/tutorial8.html">week 8's tutorial</a> is designed such that each container, iterator and algorithm is templated. A template in C++ is similar to a generic in Java where the object created does not explicitly define which data type is used. As a result all containers in the STL can be used with many different data types rather than needing to be rewritten for each one.</p>
+
+						<p>The ability to created templated classes is an important property of C++ and over the next few weeks you will be writing a number of templated data structures such as a Templated StackQueue this week and a Templated Shared Pointer in <a href="http://sydney.edu.au/engineering/it/courses/info3220/tutorial12.html">Week 12</a>.</p>
+
+						<p>The template design pattern, unlike C++ templates, is a behavioural design pattern that defines a high level set of algorithms where the complex steps are deferred to subclasses. By designing an algorithm library in this fashion you can modify particular steps of an algorithm's structure without modifying the algorithms structure. Further, by designing an algorithm library in this fashion methods can be designed to handle drastically different data structures using a common library. For example, the find methods on a set will be performed in a different way to a vector.</p>
+
+						<p>C++ templates and the template design patterns do overlap. The STL offers a library of algorithms which are implemented using the template design pattern. The algorithms library offers a number of methods which can be applied to STL containers such as <a href="http://www.cplusplus.com/reference/algorithm/find/">find</a>, <a href="http://www.cplusplus.com/reference/algorithm/max/">max</a>, <a href="http://www.cplusplus.com/reference/algorithm/min/">min</a>, <a href="http://www.cplusplus.com/reference/algorithm/shuffle/">shuffle</a> and <a href="http://www.cplusplus.com/reference/algorithm/sort/">sort</a>. A full list of the methods offered by the algorithms library can be found <a href="http://www.cplusplus.com/reference/algorithm/">here</a>.</p>
+
+					</div>
+					<div id="section3">
+						<h1>Creating a Templated Stack</h1>
+
+						<p>Your first task this week is to update your <b>StringStackQueue</b> from <a href="http://sydney.edu.au/engineering/it/courses/info3220/tutorial8.html">week 8's tutorial</a> and turn it into a <b>StackQueue&lt;T&gt;</b>.</p>
+
+						<p>This will involve updating the interfaces provided in week 8 for a <b>StringStack</b> and <b>StringQueue</b> to use the Generic <b>Stack</b> and <b>Queue</b> as shown below.</p>
+
+<pre>namespace Week10
+{
+    template &lt;class T&gt;
+    class Stack
+    {
+    public:
+        virtual ~Stack(){}
+
+        /**
+         * @brief empty checks if the stack is empty
+         * @return true if empty otherwise false
+         */
+        virtual bool empty() const = 0;
+
+        /**
+         * @brief size checks the number of items in the stack
+         * @return the number of items in the stack
+         */
+        virtual size_t size() const = 0;
+
+        /**
+         * @brief peek is the item at the top of the stack
+         * this method should not alter the state of the stack
+         * @return a reference to the top of the stack
+         */
+        virtual const T&amp; peek() const = 0;
+
+        /**
+         * @brief push adds an new item to the top of the stack
+         * @param item the new item to add to the top of the stack
+         */
+        virtual void push(const T &amp;item) = 0;
+
+        /**
+         * @brief pop removes the item on the top of the stack
+         * if the stack is empty return a default constructed T
+         * @return the item that was previously on the top of the stack
+         */
+        virtual T pop() = 0;
+
+        /**
+         * @brief operator = overwrites the current stack with a new stack
+         * @param stack the new stack
+         * @return a reference to the current stack
+         */
+        virtual Stack&lt;T&gt;&amp; operator=(const Stack&lt;T&gt; &amp;stack) = 0;
+    };
+}
+</pre>
+
+<pre>namespace Week10
+{
+    template &lt;class T&gt;
+    class Queue
+    {
+    public:
+        virtual ~Queue(){}
+
+        /**
+         * @brief empty checks if the queue is empty
+         * @return true if empty otherwise false
+         */
+        virtual bool empty() const = 0;
+
+        /**
+         * @brief size checks the number of items in the queue
+         * @return the number of items in the queue
+         */
+        virtual size_t size() const = 0;
+
+        /**
+         * @brief front is the item at the front of the queue
+         * this method should not alter the state of the queue
+         * @return a reference to the first item in the queue
+         */
+        virtual const T&amp; front() const = 0;
+
+        /**
+         * @brief enqueue adds a item to the end of the queue
+         * @param item the item to add at the end of the queue
+         */
+        virtual void enqueue(const T &amp;item) = 0;
+
+        /**
+         * @brief deqeue deletes an item from the front of the queue
+         * if the deqeue is empty return a default constructed T
+         * @return the first item from the queue before deleted
+         */
+        virtual T deqeue() = 0;
+
+        /**
+         * @brief operator = overwrites the current queue with a new queue
+         * @param queue the new queue
+         * @return a reference to the current queue
+         */
+        virtual Queue&lt;T&gt;&amp; operator=(const Queue&lt;T&gt; &amp;queue) = 0;
+    };
+}
+</pre>
+						<p>These interfaces, along with the <b>StackQueue&lt;T&gt;</b> header file, are included in a project which you can download <a href="http://sydney.edu.au/engineering/it/courses/info3220/files/week10/StackQueueTemplated.zip" download="Week10a.zip">here</a>.</p>
+
+						<p>Unlike week 8's tutorial all your code for the <b>StackQueue</b> will be placed in the header file. This is because you are writing a templated class.</p>
+
+						<p>You will not need to write any new code this week only; update the code you wrote in week 8's tutorial to conform to the standards used for C++ templates.</p>
+
+						<p>Just like week 8's tutorial we have included a number of tests for your <b>StackQueue</b>. When you have finished run the tests to confirm that your <b>StackQueue</b> has been implemented correctly.</p>
+
+					</div>
+					<div id="section4">
+						<h1>Using the STL algorithms library</h1>
+
+						<p>The best way to become familiar with the STL algorithms is to actually work with them. First, though, here is a link to the API for the <a href="http://www.cplusplus.com/reference/algorithm/">STL algorithms</a>. This API will be useful for this exercise.</p>
+
+						<p>This exercise involves you fixing a set of broken unit tests using the STL algorithms. Click this <a href="http://sydney.edu.au/engineering/it/courses/info3220/files/week10/Algorithms.zip" download="Week10b.zip">link</a> to download a Qt Project with a single file (tests.cpp). This file includes five unit tests which all fail. Your task is to use methods such as sort, replace and find to update the tests to pass.</p>
+
+						<div class="alert alert-success">
+							<h4>Hint</h4>
+							This project is set up to run the QT Unit Test framework. You may be able to leverage this project to implement the testing framework required for Stage 3 using this project.
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	
+</body></html>

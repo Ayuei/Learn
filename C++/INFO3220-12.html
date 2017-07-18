@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<!-- saved from url=(0068)http://sydney.edu.au/engineering/it/courses/info3220/tutorial12.html -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" class="gr__sydney_edu_au"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>INFO3220</title>
+		
+		<link rel="stylesheet" type="text/css" href="./INFO3220-12_files/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="./INFO3220-12_files/base.css" media="screen">
+		<link rel="stylesheet" type="text/css" href="./INFO3220-12_files/baseForPrinting.css" media="print">
+		<script type="text/javascript" src="./INFO3220-12_files/jquery-1.10.1.min.js.download"></script><style type="text/css">
+:root #content > #right > .dose > .dosesingle,
+:root #content > #center > .dose > .dosesingle,
+:root .addthis_toolbox,
+:root #header + #content > #left > #rlblock_left
+{ display: none !important; }</style>
+		<script type="text/javascript" src="./INFO3220-12_files/tutorial12.js.download"></script>
+	</head><script>function inject(){function a(){function a(a){parent.postMessage({type:"blockedWindow",args:JSON.stringify(a)},l)}function b(a){var b=a[1];return null!=b&&["_blank","_parent","_self","_top"].indexOf(b)<0?b:null}function e(a,b){var c;for(c in a)try{void 0===b[c]&&(b[c]=a[c])}catch(d){}return b}var g=arguments,h=!0,j=null,k=null;if(null!=window.event&&(k=window.event.currentTarget),null==k){for(var m=g.callee;null!=m.arguments&&null!=m.arguments.callee.caller;)m=m.arguments.callee.caller;null!=m.arguments&&m.arguments.length>0&&null!=m.arguments[0].currentTarget&&(k=m.arguments[0].currentTarget)}null!=k&&(k instanceof Window||k===document||null!=k.URL&&null!=k.body||null!=k.nodeName&&("body"==k.nodeName.toLowerCase()||"#document"==k.nodeName.toLowerCase()))?(window.pbreason="Blocked a new window opened with URL: "+g[0]+" because it was triggered by the "+k.nodeName+" element",h=!1):h=!0;document.webkitFullscreenElement||document.mozFullscreenElement||document.fullscreenElement;if(((new Date).getTime()-d<1e3||isNaN(d)&&c())&&(window.pbreason="Blocked a new window opened with URL: "+g[0]+" because a full screen was just initiated while opening this url.",document.exitFullscreen?document.exitFullscreen():document.mozCancelFullScreen?document.mozCancelFullScreen():document.webkitCancelFullScreen&&document.webkitCancelFullScreen(),h=!1),1==h){j=f.apply(this,g);var n=b(g);if(null!=n&&(i[n]=j),j!==window){var o=(new Date).getTime(),p=j.blur;j.blur=function(){(new Date).getTime()-o<1e3?(window.pbreason="Blocked a new window opened with URL: "+g[0]+" because a it was blured",j.close(),a(g)):p()}}}else{var q={href:g[0]};q.replace=function(a){q.href=a},j={close:function(){return!0},test:function(){return!0},blur:function(){return!0},focus:function(){return!0},showModelessDialog:function(){return!0},showModalDialog:function(){return!0},prompt:function(){return!0},confirm:function(){return!0},alert:function(){return!0},moveTo:function(){return!0},moveBy:function(){return!0},resizeTo:function(){return!0},resizeBy:function(){return!0},scrollBy:function(){return!0},scrollTo:function(){return!0},getSelection:function(){return!0},onunload:function(){return!0},print:function(){return!0},open:function(){return this},opener:window,closed:!1,innerHeight:480,innerWidth:640,name:g[1],location:q,document:{location:q}},e(window,j),j.window=j;var n=b(g);if(null!=n)try{i[n].close()}catch(r){}setTimeout(function(){var b;b=j.location instanceof Object?j.document.location instanceof Object?null!=q.href?q.href:g[0]:j.document.location:j.location,g[0]=b,a(g)},100)}return j}function b(a){d=a?(new Date).getTime():0/0}function c(){return document.fullScreenElement&&null!==document.fullScreenElement||null!=document.mozFullscreenElement||null!=document.webkitFullscreenElement}var d,e="originalOpenFunction",f=window.open,g=document.createElement,h=document.createEvent,i={},j=0,k=null,l=window.location!=window.parent.location?document.referrer:document.location;window[e]=window.open,window.open=function(){try{return a.apply(this,arguments)}catch(b){return null}},document.createElement=function(){var a=g.apply(document,arguments);if("a"==arguments[0]||"A"==arguments[0]){j=(new Date).getTime();var b=a.dispatchEvent;a.dispatchEvent=function(c){return null!=c.type&&"click"==(""+c.type).toLocaleLowerCase()?(window.pbreason="blocked due to an explicit dispatchEvent event with type 'click' on an 'a' tag",parent.postMessage({type:"blockedWindow",args:JSON.stringify({0:a.href})},l),!0):b(c)},k=a}return a},document.createEvent=function(){try{return arguments[0].toLowerCase().indexOf("mouse")>=0&&(new Date).getTime()-j<=50?(window.pbreason="Blocked because 'a' element was recently created and "+arguments[0]+" event was created shortly after",arguments[0]=k.href,parent.postMessage({type:"blockedWindow",args:JSON.stringify({0:k.href})},l),null):h.apply(document,arguments)}catch(a){}},document.addEventListener("fullscreenchange",function(){b(document.fullscreen)},!1),document.addEventListener("mozfullscreenchange",function(){b(document.mozFullScreen)},!1),document.addEventListener("webkitfullscreenchange",function(){b(document.webkitIsFullScreen)},!1)} inject()</script>
+
+	<body data-gr-c-s-loaded="true">
+
+		<div id="page">
+			<div id="topPage">
+				<div id="topPageTitles">
+					<nav class="navbar navbar-inverse " role="navigation">
+						<div class="container-fluid">
+							<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+								<ul class="nav navbar-nav">
+									<li><a href="http://sydney.edu.au/engineering/it/courses/info3220/tutorial2.html">Week 2</a></li>
+									<li><a href="http://sydney.edu.au/engineering/it/courses/info3220/tutorial3.html">Week 3</a></li>
+									<li><a href="http://sydney.edu.au/engineering/it/courses/info3220/tutorial4.html">Week 4</a></li>
+									<li><a href="http://sydney.edu.au/engineering/it/courses/info3220/tutorial5.html">Week 5</a></li>
+									<li><a href="http://sydney.edu.au/engineering/it/courses/info3220/tutorial6.html">Week 6</a></li>
+									<li><a href="http://sydney.edu.au/engineering/it/courses/info3220/tutorial7.html">Week 7</a></li>
+									<li><a href="http://sydney.edu.au/engineering/it/courses/info3220/tutorial8.html">Week 8</a></li>
+									<li><a href="http://sydney.edu.au/engineering/it/courses/info3220/tutorial9.html">Week 9</a></li>
+									<li><a href="http://sydney.edu.au/engineering/it/courses/info3220/tutorial10.html">Week 10</a></li>
+									<li><a href="http://sydney.edu.au/engineering/it/courses/info3220/tutorial11.html">Week 11</a></li>
+									<li class="active"><a href="http://sydney.edu.au/engineering/it/courses/info3220/tutorial12.html">Week 12</a></li>
+									<li><a href="http://sydney.edu.au/engineering/it/courses/info3220/tutorial13.html">Week 13</a></li>
+								</ul>
+							</div>
+						</div>
+					</nav>
+					<div id="header">
+						<div class="titlePlacement">
+							<div class="title"><h1>Week 12 Tutorial</h1></div>
+							<div class="subText"><h2>The Flyweight and Observer Design Pattern</h2></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="bottomPage">
+				<div id="contentsPanel" style="position: relative; width: 27%;">
+					<ul class="nav nav-pills nav-stacked">
+						<li id="nav1" class="active">
+							<a href="http://sydney.edu.au/engineering/it/courses/info3220/tutorial12.html#section1"><span style="float:right;" class="glyphicon glyphicon-chevron-right"></span>Overview</a>
+						</li>
+						<li id="nav2" class="">
+							<a href="http://sydney.edu.au/engineering/it/courses/info3220/tutorial12.html#section2"><span style="float:right;" class="glyphicon glyphicon-chevron-right"></span>The Flyweight and Observer Design Patterns</a>
+						</li>
+						<li id="nav3" class="">
+							<a href="http://sydney.edu.au/engineering/it/courses/info3220/tutorial12.html#section3"><span style="float:right;" class="glyphicon glyphicon-chevron-right"></span>Smart Pointers</a>
+						</li>
+						<li id="nav4" class="">
+							<a href="http://sydney.edu.au/engineering/it/courses/info3220/tutorial12.html#section4"><span style="float:right;" class="glyphicon glyphicon-chevron-right"></span>Creating your own Shared Pointer</a>
+						</li>
+					</ul>
+				</div>
+				<div id="pageContent"> 
+					<div id="section1">
+						<h1>Overview</h1>
+						<p>This week your goal is to become familiar with the Flyweight and Observer design patterns and their relationship to smart pointers. Also this is your last chance to talk to your tutors about the final stage of the Assignment.</p>
+
+						<h2>What if my extensions won't run on the lab machines?</h2>
+
+						<p>Last year for the final stage of the Assignment we allowed students to construct videos to demo their code rather than running them in the lab if they don't have a laptop. This option is once again open to you this year. If you choose to construct a video, rather than running your code in the lab, then you must ensure that your video includes the features as outlined in the assignment specification (extensions etc.). 
+
+
+						</p><p>The video you construct will very much depend of the extensions which you decide to pursue. To show you what is possible we have attached two of the top videos from 2013.</p>
+
+						<ul>
+							<li>This was the best edited <a href="https://www.youtube.com/watch?v=BFTymUOLT8k">video</a> with some great extensions</li>
+							<li>This was the most technically difficult extension; however, the <a href="https://www.youtube.com/watch?v=ynuJWZ1XIEw">video</a> does not quite do it justice. If this is unclear, this student's billiard game has been networked.</li>
+						</ul>
+
+						<p>The best demos, which provide a video, will be shown to all the students in the final lecture of the course so if you are proud of your code please consider making a video of your final stage.</p>
+
+						<div class="alert alert-warning">
+							<h4>Note</h4>
+							Even if you choose to create a video your tutor may still ask to see your code run in the lab on your laptop or lab machine to evaluate backwards compatibility, along with checking the design pattern implementation and overall coding style.
+						</div>
+
+					</div>
+					<div id="section2">
+						<h1>The Flyweight and Observer Design Patterns</h1>
+
+						<h2>The Flyweight Design Pattern</h2>
+
+						<p>The <a href="http://en.wikipedia.org/wiki/Flyweight_pattern">flyweight design pattern</a> addresses the need for applications to share memory resources whenever possible. Often applications are composed of a number of similar objects which have shared properties. These shared properties, in the case where they are particularly memory intensive, should only be constructed once and then a pointer can be directed to this shared memory.</p><p>
+
+						</p><p>This design pattern is particularly important for large scale applications. In the C++ STL this design pattern is applied to produce a set of smart pointers which will be discussed in detail in today's lab. 
+
+						</p><h2>The Observer Design Pattern</h2>
+
+						<p>The <a href="http://en.wikipedia.org/wiki/Observer_pattern">observer design pattern</a> is utilised where an instance of a class maintains a list of its objects which are dependent on it. These dependents are notified automatically when any state within the instance is modified or deleted.</p>
+
+						<p>An observer design pattern is the first behavioural design pattern which we have considered in the tutorial. This design pattern is particularly important in event handling and graphical design development. This is due to its ability to signal all dependent classes when a change in the state of the program has been made, e.g., a keypress action.</p>
+
+						<h2>Using more than one design pattern to solve a problem</h2>
+
+						<p>In today's tutorial you will be combining both the Flyweight and Observer design pattern to implement your own smart pointer. This builds on one of the key principles of object oriented design which is to build new solutions to problems (although in this case building an existing solution) by using existing solutions design patterns / approaches to build up to a new solution.</p>
+
+					</div>
+					<div id="section3">
+						<h1>Smart Pointers</h1>
+
+						<p>A smart pointer is an abstract data type which provides additional features to a standard pointer. Although encapsulating the functionality of a pointer, a smart pointer is not particularly representative of an adaptor design pattern as a smart pointer often provides a more complex interface which is representative of the additional features provided.</p>
+
+						<p>Smart pointers are designed to minimise the number of bugs associated with the misuse of pointers while providing the efficiency gains which pointers often provide. This is achieved by smart pointers providing automatic memory management or bounds checking.</p> 
+
+						<p>Smart pointers are one of the most powerful tools in C++. The provide many of the benefits of a raw pointer (pointers you have used to date), but provide additional functionality which can provide exception safety, prevent memory leaks and minimise memory usage.</p>
+
+						<h2>Legacy pointers</h2>
+
+						<p>Prior to C++11 only the <code>auto_ptr</code> existed in the <code>std::</code> C++ library. For all other smart pointers, developers either relied on <a href="http://en.wikipedia.org/wiki/C%2B%2B_Technical_Report_1"><code>tr1</code></a> or <a href="http://www.boost.org/doc/libs/1_55_0/libs/smart_ptr/smart_ptr.htm"><code>boost</code></a>. The <a href="http://www.cplusplus.com/reference/memory/auto_ptr/"><code>std::auto_ptr</code></a> is only able to hold ownership of single pointer. This implementation is now deprecated and has been replaced by the C++ Unique Pointer discussed below.</p>
+
+						<h2>C++11 Pointers</h2>
+
+						<p>One significant addition to C++ which was included in C++11 is the suite of smart pointers. Although we will be primarily focusing on the shared pointer in this lab there are three smart pointers which are included in the C++11 release which include:</p>
+
+						<ul>
+							<li><a href="http://www.cplusplus.com/reference/memory/shared_ptr/"><code>std::shared_ptr</code></a>: creates a shared memory location which is maintained using a limited garbage collection mechanism. You will be writing your own shared_ptr in today's lab based on this interface.</li>
+							<li><a href="http://www.cplusplus.com/reference/memory/unique_ptr/"><code>std::unique_ptr</code></a>: a reimplementation of the <code>auto_ptr</code>. This was included as the unique_ptr takes advantage of the <a href="http://www.cplusplus.com/reference/algorithm/move/">move</a> semantics in C++11. The auto_ptr could not be upgraded as this would have caused backwards compatibility issues and therefore it was deprecated in the C++11 release.</li>
+							<li><a href="http://www.cplusplus.com/reference/memory/weak_ptr/"><code>std::weak_ptr</code></a>: a pointer which holds no ownership on itself. You will not need to use a <code>weak_ptr</code> in this course.</li>
+						</ul>
+
+						<div class="alert alert-success"><h4>Hint</h4>This tutorial focuses on the first of these three smart pointers. This is also the most important in terms of this course as a <code>std::shared_ptr</code> is constructed using two important design patterns.</div>
+
+						<p>Each of these shared pointers provides additional functionality to raw pointers with only a slight performance degradation. As a result whenever possible it is preferable that smart pointers are used over raw pointers.</p>
+
+					</div>
+					<div id="section4">
+						<h1>Creating your own Templated Shared Pointer</h1>
+
+						<h2>The Shared Pointer Project</h2>
+
+						<p>To begin developing your own shared pointer download the QT Project <a href="http://sydney.edu.au/engineering/it/courses/info3220/files/week12/week12.zip" download="week12.zip">here</a>. This project includes a <b>Tests</b> class (<b>Tests.h</b> and <b>Tests.cpp</b>) a <b>main.cpp</b> and a <b>SharedPointer.h</b>. As the shared pointer you will be implementing will be templated, all the code you will write this week will be implemented in <b>SharedPointer.h</b>.</p>
+
+						<p>Each method you will need to implement is provided in the <b>SharedPointer</b> header file. As a result only helper methods are required to be added to this class, all of which should be private methods. Along with any private helper methods you will also need to include your member variables.</p>
+
+						<h3>Member variables of a shared pointer</h3>
+
+						<p>A shared pointer must include the ability to both store the allocated shared memory and track the number of pointers which are pointing to this shared memory. Therefore, consider the minimum number of member variables required for the shared pointer. Also, consider which type the member variable(s) need to be to achieve this aim.</p>
+
+						<div class="alert alert-danger"><h4>Warning!</h4>Do not cheat and include either a std::shared_ptr or a std::tr1::shared_ptr as your member variable. That defeats the purpose of this exercise.</div>
+
+						<div class="alert alert-success"><h4>Hint</h4>As an additional hint the member variable(s) must represent the design patterns which we are investigating in detail in today's lab. Therefore, if you don't have a member variable which can observe perhaps you need an additional member variable?</div>
+
+						<p>Once you have selected the member variables for your shared pointer, start implementing each of the provided methods. You will find that quite often different methods perform similar tasks. As a result you may find it easier to include additional <code>private</code> helper methods more than in previous tutorials.</p>
+
+						<h2>Testing the Templated Shared Pointer</h2>
+
+						<p>The tests provided for this project ensure that all the public methods are tested. Be mindful that you implement all methods before trying these tests. It is important that before starting you become familiar with each test and consider adding break points or print statements. This is key as this tutorial exercise has the highest risk of giving rise to a segmentation fault of all exercises you have completed this semester; even more so than the Builder or Visitor tutorials in <a href="http://sydney.edu.au/engineering/it/courses/info3220/tutorial5.html"> week 5</a> and <a href="http://sydney.edu.au/engineering/it/courses/info3220/tutorial11.html"> week 11</a>.</p>
+
+						<div class="wrappedImage"><img id="expandableImage1" src="./INFO3220-12_files/FinalUnitTestResult.jpg" alt="Final Unit Test Result"></div>
+
+						<p>This exercise is also the most challenging of the tutorial exercises which you have faced to date, so do not despair if you cannot complete it. If you can, however, you will be greeted with a success message similar to that seen on the right.</p>
+
+						<p>If you are unable to finish this tutorial in the lab try it at home and ask further questions on <a href="https://edstem.com.au/">Ed</a> until you can complete this exercise. This exercise is important not just in terms of understanding a number of key concepts in this course, but is also important as constructing your own shared pointer is a common C++ interview question.</p>
+
+						<p>If you do happen to finish this tutorial go back and complete any tutorial exercises you have not yet finished. If you have completed all the tutorials, take some time to read the first section of each tutorial again as there are some helpful hints there which might help you in the exam.</p>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+		var expandableImage1Clicked = false;
+		$('#expandableImage1').click(function() 
+			{
+				if (expandableImage1Clicked)
+				{
+					expandableImage1Clicked = false;
+					$(this).animate({width: "28%"}, 'slow');
+				}
+				else 
+				{
+					expandableImage1Clicked = true;
+					$(this).animate({width: "100%"}, 'slow');
+				}
+			}
+		);
+		</script>
+	
+
+</body></html>

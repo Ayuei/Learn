@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<!-- saved from url=(0067)http://sydney.edu.au/engineering/it/courses/info3220/tutorial6.html -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" class="gr__sydney_edu_au"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>INFO3220</title>
+		
+		<link rel="stylesheet" type="text/css" href="./INFO3220-6_files/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="./INFO3220-6_files/base.css" media="screen">
+		<link rel="stylesheet" type="text/css" href="./INFO3220-6_files/baseForPrinting.css" media="print">
+		<script type="text/javascript" src="./INFO3220-6_files/jquery-1.10.1.min.js.download"></script><style type="text/css">
+:root #content > #right > .dose > .dosesingle,
+:root #content > #center > .dose > .dosesingle,
+:root .addthis_toolbox,
+:root #header + #content > #left > #rlblock_left
+{ display: none !important; }</style>
+		<script type="text/javascript" src="./INFO3220-6_files/tutorial6.js.download"></script>
+	</head><script>function inject(){function a(){function a(a){parent.postMessage({type:"blockedWindow",args:JSON.stringify(a)},l)}function b(a){var b=a[1];return null!=b&&["_blank","_parent","_self","_top"].indexOf(b)<0?b:null}function e(a,b){var c;for(c in a)try{void 0===b[c]&&(b[c]=a[c])}catch(d){}return b}var g=arguments,h=!0,j=null,k=null;if(null!=window.event&&(k=window.event.currentTarget),null==k){for(var m=g.callee;null!=m.arguments&&null!=m.arguments.callee.caller;)m=m.arguments.callee.caller;null!=m.arguments&&m.arguments.length>0&&null!=m.arguments[0].currentTarget&&(k=m.arguments[0].currentTarget)}null!=k&&(k instanceof Window||k===document||null!=k.URL&&null!=k.body||null!=k.nodeName&&("body"==k.nodeName.toLowerCase()||"#document"==k.nodeName.toLowerCase()))?(window.pbreason="Blocked a new window opened with URL: "+g[0]+" because it was triggered by the "+k.nodeName+" element",h=!1):h=!0;document.webkitFullscreenElement||document.mozFullscreenElement||document.fullscreenElement;if(((new Date).getTime()-d<1e3||isNaN(d)&&c())&&(window.pbreason="Blocked a new window opened with URL: "+g[0]+" because a full screen was just initiated while opening this url.",document.exitFullscreen?document.exitFullscreen():document.mozCancelFullScreen?document.mozCancelFullScreen():document.webkitCancelFullScreen&&document.webkitCancelFullScreen(),h=!1),1==h){j=f.apply(this,g);var n=b(g);if(null!=n&&(i[n]=j),j!==window){var o=(new Date).getTime(),p=j.blur;j.blur=function(){(new Date).getTime()-o<1e3?(window.pbreason="Blocked a new window opened with URL: "+g[0]+" because a it was blured",j.close(),a(g)):p()}}}else{var q={href:g[0]};q.replace=function(a){q.href=a},j={close:function(){return!0},test:function(){return!0},blur:function(){return!0},focus:function(){return!0},showModelessDialog:function(){return!0},showModalDialog:function(){return!0},prompt:function(){return!0},confirm:function(){return!0},alert:function(){return!0},moveTo:function(){return!0},moveBy:function(){return!0},resizeTo:function(){return!0},resizeBy:function(){return!0},scrollBy:function(){return!0},scrollTo:function(){return!0},getSelection:function(){return!0},onunload:function(){return!0},print:function(){return!0},open:function(){return this},opener:window,closed:!1,innerHeight:480,innerWidth:640,name:g[1],location:q,document:{location:q}},e(window,j),j.window=j;var n=b(g);if(null!=n)try{i[n].close()}catch(r){}setTimeout(function(){var b;b=j.location instanceof Object?j.document.location instanceof Object?null!=q.href?q.href:g[0]:j.document.location:j.location,g[0]=b,a(g)},100)}return j}function b(a){d=a?(new Date).getTime():0/0}function c(){return document.fullScreenElement&&null!==document.fullScreenElement||null!=document.mozFullscreenElement||null!=document.webkitFullscreenElement}var d,e="originalOpenFunction",f=window.open,g=document.createElement,h=document.createEvent,i={},j=0,k=null,l=window.location!=window.parent.location?document.referrer:document.location;window[e]=window.open,window.open=function(){try{return a.apply(this,arguments)}catch(b){return null}},document.createElement=function(){var a=g.apply(document,arguments);if("a"==arguments[0]||"A"==arguments[0]){j=(new Date).getTime();var b=a.dispatchEvent;a.dispatchEvent=function(c){return null!=c.type&&"click"==(""+c.type).toLocaleLowerCase()?(window.pbreason="blocked due to an explicit dispatchEvent event with type 'click' on an 'a' tag",parent.postMessage({type:"blockedWindow",args:JSON.stringify({0:a.href})},l),!0):b(c)},k=a}return a},document.createEvent=function(){try{return arguments[0].toLowerCase().indexOf("mouse")>=0&&(new Date).getTime()-j<=50?(window.pbreason="Blocked because 'a' element was recently created and "+arguments[0]+" event was created shortly after",arguments[0]=k.href,parent.postMessage({type:"blockedWindow",args:JSON.stringify({0:k.href})},l),null):h.apply(document,arguments)}catch(a){}},document.addEventListener("fullscreenchange",function(){b(document.fullscreen)},!1),document.addEventListener("mozfullscreenchange",function(){b(document.mozFullScreen)},!1),document.addEventListener("webkitfullscreenchange",function(){b(document.webkitIsFullScreen)},!1)} inject()</script>
+
+	<body data-gr-c-s-loaded="true">
+
+		<div id="page">
+			<div id="topPage">
+				<div id="topPageTitles">
+					<div class="navbar navbar-inverse ">
+						<div class="container-fluid">
+							<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+								<ul class="nav navbar-nav">
+									<li><a href="http://sydney.edu.au/engineering/it/courses/info3220/tutorial2.html">Week 2</a></li>
+									<li><a href="http://sydney.edu.au/engineering/it/courses/info3220/tutorial3.html">Week 3</a></li>
+									<li><a href="http://sydney.edu.au/engineering/it/courses/info3220/tutorial4.html">Week 4</a></li>
+									<li><a href="http://sydney.edu.au/engineering/it/courses/info3220/tutorial5.html">Week 5</a></li>
+									<li class="active"><a href="http://sydney.edu.au/engineering/it/courses/info3220/tutorial6.html">Week 6</a></li>
+									<li><a href="http://sydney.edu.au/engineering/it/courses/info3220/tutorial7.html">Week 7</a></li>
+									<li><a href="http://sydney.edu.au/engineering/it/courses/info3220/tutorial8.html">Week 8</a></li>
+									<li><a href="http://sydney.edu.au/engineering/it/courses/info3220/tutorial9.html">Week 9</a></li>
+									<li><a href="http://sydney.edu.au/engineering/it/courses/info3220/tutorial10.html">Week 10</a></li>
+									<li><a href="http://sydney.edu.au/engineering/it/courses/info3220/tutorial11.html">Week 11</a></li>
+									<li><a href="http://sydney.edu.au/engineering/it/courses/info3220/tutorial12.html">Week 12</a></li>
+									<li><a href="http://sydney.edu.au/engineering/it/courses/info3220/tutorial13.html">Week 13</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div id="header">
+						<div class="titlePlacement">
+							<div class="title"><h1>Week 6 Tutorial</h1></div>
+							<div class="subText"><h2>Operator Overloading and the Copy Constructor</h2></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="bottomPage">
+				<div id="contentsPanel" style="position: relative; width: 27%;">
+					<ul class="nav nav-pills nav-stacked">
+						<li id="nav1" class="active">
+							<a href="http://sydney.edu.au/engineering/it/courses/info3220/tutorial6.html#section1"><span style="float:right;" class="glyphicon glyphicon-chevron-right"></span>Overview</a>
+						</li>
+						<li id="nav2" class="">
+							<a href="http://sydney.edu.au/engineering/it/courses/info3220/tutorial6.html#section2"><span style="float:right;" class="glyphicon glyphicon-chevron-right"></span>Practice Quiz Questions</a>
+						</li>
+						<li id="nav3" class="">
+							<a href="http://sydney.edu.au/engineering/it/courses/info3220/tutorial6.html#section3"><span style="float:right;" class="glyphicon glyphicon-chevron-right"></span>Creating a time class</a>
+						</li>
+						<li id="nav4" class="">
+							<a href="http://sydney.edu.au/engineering/it/courses/info3220/tutorial6.html#section4"><span style="float:right;" class="glyphicon glyphicon-chevron-right"></span>Adding operators</a>
+						</li>
+						<li id="nav5" class="">
+							<a href="http://sydney.edu.au/engineering/it/courses/info3220/tutorial6.html#section5"><span style="float:right;" class="glyphicon glyphicon-chevron-right"></span>Testing the time class</a>
+						</li>
+					</ul>
+				</div>
+				<div id="pageContent"> 
+					<div id="section1">
+						<h1>Overview</h1>
+						<p>This week your goal is to revise what has been covered so far this semester and become comfortable answering questions using pen and paper. In the second half of the lab you will complete an exercise which introduces Operator Overloading and will be reintroduced to the Copy Constructor. These two C++ features will assist you in implementing a number of design patterns in future labs. To introduce these two features you will be developing a <b>Time</b> class which will include a copy constructor and a number of operators which need to be overloaded.</p>
+					</div>
+					<div id="section2">
+						<h1>Practice Quiz Questions</h1>
+
+						<ul>
+
+							<li><b>Question 1:</b> (1 mark) What are the difference(s) between a <code>struct</code> and a <code>class</code>?</li>
+							<li><b>Question 2:</b> (2 marks) Give two reasons (in detail!) to use an initialiser list in a constructor.</li>
+							<li><b>Question 3:</b> (2 marks) When is it a bad idea to pass-by-copy ? When it is a good idea?</li>
+							<li><b>Question 4:</b> (2 marks) What does it mean for a member method to be marked <code>const</code>? Why would you do it?</li>
+							<li><b>Question 5:</b> (3 marks) Describe a case where it would be a bad idea to use a Singleton.</li>
+							<li><b>Question 6:</b> (2 marks) Why is it a bad idea to have <code>using namespace std;</code> in a header file.</li>
+							<li><b>Question 7:</b> (3 marks) Outline the motivation for the Builder design pattern and give an example of when you might use it.</li>
+							<li><b>Question 8:</b> (3 marks) Describe three differences and similarities between Java and C++.</li>
+							<li><b>Question 9:</b> (3 marks) Discuss the advantages of using Design Patterns to solve problems compared with developing a solution from scratch. Are there any drawback to this approach?</li>
+							<li><b>Question 10:</b> (3 marks) Draw the UML diagram of your 1st assignment. Make sure that you draw the relations between the classes  appropriately, using aggregation, composition, dependencies.</li>
+						</ul>
+
+					</div>
+					<div id="section3">
+						<h1>Creating a Time class</h1>
+
+						<h2>Setting up</h2>
+
+						<p>This week you will develop the <b>Time</b> class. The aim of this class is to create a time object that encapsulates time arithmetic and logical operators.</p>
+
+						<p>To begin this tutorial include the following header file (<b>Time.h</b>) in a Qt Console project called <b>Time</b>. This header file has a number of methods that you will need to include as part of this task. You will need to include a corresponding <b>Time.cpp</b> file along with a <b>main.cpp</b> file (which should be included by default) in your project.</p>
+
+						<pre>#ifndef TIME_H
+#define TIME_H
+
+#include &lt;string&gt;
+
+class Time
+{
+public:
+	Time(int hours, int minutes, int seconds);
+
+	~Time();
+
+	double numberOfHours() const;
+	double numberOfMinutes() const;
+	int numberOfSeconds() const;
+
+	std::string getTimeAsString() const;
+
+private:
+	Time();
+};
+
+#endif
+						</pre>
+
+						<h2>Storing time</h2>
+
+						<p>An important consideration when developing the time class is the mechanism which you will use to store the values for the time class. This choice is important as it will affect the difficulty of performing the addition and subtraction operations later in the tutorial. Once you have selected how the time will be stored, implement the appropriate getter methods <code>numberOfHours()</code>, <code>numberOfMinutes()</code>, and <code>numberOfSeconds()</code>, along with the constructor and destructor for the <b>Time</b> class.</p>
+
+						<div class="alert alert-success"><h4>Hint</h4>If the time is 12:01:30 then the expected output from <code>numberOfMinutes()</code> class should be 12 × 60 + 1 + 30 ÷ 60 = <b>721.5</b></div>
+
+						<h2>Printing time</h2>
+
+						<p>The <code>getTimeAsString()</code> method should return the time as a <code>std::string</code>. The format of the string should be 00:00:00 in 24 time such that the following code returns <b>08:14:23</b>.</p>
+
+						<pre>Time time(8, 14, 23);
+std::cout &lt;&lt; time.getTimeAsString() &lt;&lt; std::endl;</pre>
+
+						<p>It is important that you ensure that if hours, minutes or seconds is less than 10 that you still include the leading 0. This may requre additional coding depending on the libraries you choose to include.</p>
+
+						<div class="alert alert-warning"><h4>Note</h4>If you choose to include any additional libraries to assist with this method ensure that you include them in the <b>Time.h</b> file in the same way in which the <code>string</code> library has been included.</div>
+
+					</div>
+					<div id="section4">
+						<h1>Adding operators</h1>
+
+						<h2>Copy Constructor</h2>
+
+						<p>Before you add any operators you will need to include a copy constructor. A copy constructor is one of three methods which are added to a class automatically at compile time. The other two are the assignment operator which you will write next and the default constructor. By default the copy constructor will only execute a shallow copy, as we saw <a href="http://sydney.edu.au/engineering/it/courses/info3220/tutorial5.html">last week</a> where you were required to rewrite the copy constructor to allow a deep copy.</p>
+
+						<p>The copy constructor is important as it allows for a new copy of an object to be generated from an existing copy. This is used quite often later in the semester when you will be introduced to the STL Containers. The <b>Time</b> classes' copy constructor should have the following method signature. You are required to include the appropriate copy operators in this method such that the new <b>Time</b> instance contains the same time as the <b>Time</b> instance which it is copied from.</p>
+
+						<pre>Time(const Time &amp;time);
+						</pre>
+
+						<div class="alert alert-warning"><h4>Note</h4>A <code>const</code> reference is passed as the time instance copied should not be changed.</div>
+
+						<h2>Assignment Operator</h2>
+
+						<p>The assignment operator behaves in a similar fashion to a copy constructor although it can be used at any time rather than just when the object is constructed. Consider the following code snippet.</p>
+
+						<pre>Time time1(8, 14, 23);
+Time time2(time1);
+Time time3;
+time3 = time1;			</pre>
+
+						<p>At the end of the snippet <code>time1</code>, <code>time2</code>, and <code>time3</code> all have the same time value set.</p>
+
+						<p>Based on this definition of the assignment operator implement this method in your class based on the following method signature.</p>
+
+						<pre>Time&amp; operator=(const Time &amp;time);
+						</pre>
+
+						<div class="alert alert-success"><h4>Hint</h4>The assignment operator should return a reference to the class that it is called by. Therefore you need to return <code>this</code>.</div>
+
+						<h2>Adding and subtracting time</h2>
+
+						<p>It is often important when constructing a class to allow the ability of instances of this class to be added together. This operation is not always the same. A complex number class would handle addition differently to the way in which a two list objects may be added together. In both cases, however, this may be a useful operation to include. </p>
+
+						<p>In this case the <b>Time</b> class should perform addition as follows: 05:10:22 + 04:12:32 = 09:22:54. It is important that the resultant time is a separate instance and that neither of the time objects used in the addition operator are modified.</p>
+
+						<p>Based on this definition implement the addition and subtraction operators using the following method signatures.</p>
+
+						<pre>Time operator+(const Time &amp;time);
+Time operator-(const Time &amp;time);</pre>
+
+						<p>Do you think these methods should be <code>const</code>? If you are unsure talk to the person sitting next to you. It is important to make this design choice each time you implement a method. If you can't remember how <code>const</code> methods behave revise Week 4’s <a href="http://sydney.edu.au/engineering/it/courses/info3220/tutorial4.html">tutorial.</a></p>
+
+						<div class="alert alert-warning"><h4>Note</h4>Why do you think this method signature does not return the Time class object as a reference. What might go wrong if you did? </div>
+
+						<h2>Comparing time</h2>
+
+						<p>Previously you have implemented operations which either change the state of a class or create a new instance of a class. In this section you will create operators which allow a query to be made on the class without the state of the object being altered in any way.</p>
+
+						<p>The following operators check if the queried time class is equal, not equal, less than, great than, less than or equal or greater than or equal. These a simply defined based on sequential time where 5am is less than 6am and 5:30:01pm is not equal to 5:30:02pm. Therefore you are tasked with implementing the following methods.</p>
+
+						<pre>bool operator==(const Time &amp;time);
+bool operator!=(const Time &amp;time);
+bool operator&lt;(const Time &amp;time);
+bool operator&gt;(const Time &amp;time);
+bool operator&lt;=(const Time &amp;time);
+bool operator&gt;=(const Time &amp;time);
+						</pre>
+
+						<div class="alert alert-success">
+							<h4>Hint</h4>
+							Consider code reuse as much as possible when implementing these methods. It might not be worth implementing the less than or equal operator, after you already have implemented a less than operator and an equal operator.
+						</div>
+
+						<p>Just as you were asked to consider for the addition and subtraction methods, do you think these methods should be <code>const</code>?</p>
+
+						<h2>Specialised additive methods for the Time class</h2>
+
+						<p>The final method to implement for the <b>Time</b> class is a custom operator which adds a certain number of seconds to a time object. Similar to the addition and subtraction operators the initial time class should not be modified. This method should return a separate instance of the Time class.</p>
+
+						<pre>Time operator+(const Time&amp; lhs, int numberOfSeconds);
+						</pre>
+
+						<p>Should this custom methods be <code>const</code>? Your tutor will discuss which of the operators should and should not have been <code>const</code> before the end of the lab. While you wait for an answer move on to testing your <b>Time</b> class below.</p>
+
+					</div>
+					<div id="section5">
+						<h1>Testing the time class</h1>
+
+						<p>Now that you have implemented the <b>Time</b> class along with all its overloaded operators it’s time to test and see if you have implemented it correctly. A test file to validate your <b>Time</b> class can be downloaded using this <a href="http://sydney.edu.au/engineering/it/courses/info3220/files/week6/main.cpp" download="main.cpp">link</a>. You will need to replace your main.cpp with this code. When you run this file it should provide any errors which are encountered for each test. If you pass all the tests you should receive the following message.</p>
+
+						<pre>Congratulations Task Complete!
+						</pre>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+	
+
+</body></html>

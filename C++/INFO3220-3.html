@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<!-- saved from url=(0067)http://sydney.edu.au/engineering/it/courses/info3220/tutorial3.html -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" class="gr__sydney_edu_au"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>INFO3220</title>
+		
+		<link rel="stylesheet" type="text/css" href="./INFO3220-3_files/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="./INFO3220-3_files/base.css" media="screen">
+		<link rel="stylesheet" type="text/css" href="./INFO3220-3_files/baseForPrinting.css" media="print">
+		<script type="text/javascript" src="./INFO3220-3_files/jquery-1.10.1.min.js.download"></script>
+		<script type="text/javascript" src="./INFO3220-3_files/tutorial3.js.download"></script>
+	<style type="text/css">
+:root #content > #right > .dose > .dosesingle,
+:root #content > #center > .dose > .dosesingle,
+:root .addthis_toolbox,
+:root #header + #content > #left > #rlblock_left
+{ display: none !important; }</style></head>
+
+	<body data-gr-c-s-loaded="true">
+
+		<div id="page">
+			<div id="topPage">
+				<div id="topPageTitles">
+					<div class="navbar navbar-inverse">
+						<div class="container-fluid">
+							<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+								<ul class="nav navbar-nav">
+									<li><a href="http://sydney.edu.au/engineering/it/courses/info3220/tutorial2.html">Week 2</a></li>
+									<li class="active"><a href="http://sydney.edu.au/engineering/it/courses/info3220/tutorial3.html">Week 3</a></li>
+									<li><a href="http://sydney.edu.au/engineering/it/courses/info3220/tutorial4.html">Week 4</a></li>
+									<li><a href="http://sydney.edu.au/engineering/it/courses/info3220/tutorial5.html">Week 5</a></li>
+									<li><a href="http://sydney.edu.au/engineering/it/courses/info3220/tutorial6.html">Week 6</a></li>
+									<li><a href="http://sydney.edu.au/engineering/it/courses/info3220/tutorial7.html">Week 7</a></li>
+									<li><a href="http://sydney.edu.au/engineering/it/courses/info3220/tutorial8.html">Week 8</a></li>
+									<li><a href="http://sydney.edu.au/engineering/it/courses/info3220/tutorial9.html">Week 9</a></li>
+									<li><a href="http://sydney.edu.au/engineering/it/courses/info3220/tutorial10.html">Week 10</a></li>
+									<li><a href="http://sydney.edu.au/engineering/it/courses/info3220/tutorial11.html">Week 11</a></li>
+									<li><a href="http://sydney.edu.au/engineering/it/courses/info3220/tutorial12.html">Week 12</a></li>
+									<li><a href="http://sydney.edu.au/engineering/it/courses/info3220/tutorial13.html">Week 13</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div id="header">
+						<div class="titlePlacement">
+							<div class="title"><h1>Week 3 Tutorial</h1></div>
+							<div class="subText"><h2>Welcome to GUI coding with QTCreator</h2></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="bottomPage">
+				<div id="contentsPanel" style="position: relative; width: 27%;">
+					<ul class="nav nav-pills nav-stacked">
+						<li id="nav1" class="active">
+							<a href="http://sydney.edu.au/engineering/it/courses/info3220/tutorial3.html#section1"><span style="float:right;" class="glyphicon glyphicon-chevron-right"></span>Overview</a>
+						</li>
+						<li id="nav2" class="">
+							<a href="http://sydney.edu.au/engineering/it/courses/info3220/tutorial3.html#section2"><span style="float:right;" class="glyphicon glyphicon-chevron-right"></span>Create a graphics application using Qt Creator</a>
+						</li>
+						<li id="nav3" class="">
+							<a href="http://sydney.edu.au/engineering/it/courses/info3220/tutorial3.html#section3"><span style="float:right;" class="glyphicon glyphicon-chevron-right"></span>Making the graphics move</a>
+						</li>
+						<li id="nav4" class="">
+							<a href="http://sydney.edu.au/engineering/it/courses/info3220/tutorial3.html#section4"><span style="float:right;" class="glyphicon glyphicon-chevron-right"></span>Extension: Try out your artistic flair</a>
+						</li>
+					</ul>
+				</div>
+				<div id="pageContent"> 
+					<div id="section1">
+						<h1>Overview</h1>
+						<p>This week your goal is to become familiar with Qt Creator's dialog project. This is the suggested project configuration for your assignment. Further, the rendering framework you will be introduced to in today's tutorial can be reused for your Assignments.</p>
+					</div>
+					<div id="section2">
+						<h1>Create a graphics application using Qt Creator</h1>
+
+						<h2>Setting up a Dialog Project</h2>
+
+						<p>Before you get started developing your first graphical C++ application lets start by setting up a dialog project in Qt Creator.</p>
+
+						<div class="wrappedImage"><img id="expandableImage1" src="./INFO3220-3_files/GraphicalApplication.jpg" alt="Project Setup1"></div>
+
+						<p>Start by creating a project just as you did last week. If you don't remember follow this <a href="http://sydney.edu.au/engineering/it/courses/info3220/tutorial2.html#section3">link</a> to where we set up a console application to run HelloWorld. Unlike last week however where you selected a console application this week you will select a <b>Qt Gui Application</b></p> 
+
+						<div class="alert alert-warning"><h4>Note</h4>Even if you choose not to use a dialog project for your assignment you will need to use one of the three Qt Gui Application projects.</div>
+
+						<br>
+
+						<div class="wrappedImage"><img id="expandableImage2" src="./INFO3220-3_files/GraphicalProjectCreation.jpg" alt="Project Setup2"></div>
+
+						<p> Once you have selected a Gui Application you will be asked to give a project name and folder location. Save this project in the same directory that you stored the HelloWorld and Vehicle exercises from last week. In the example on the right it has been stored on the U drive in the INFO3220 directory.</p>
+
+						<p>You should call your project <b>SpaceInvaders</b> or something similar as this most accurately describes what you will be developing today.</p>
+
+						<p>When you click next you will reach the kit selection page. Leave the default values here and press next on the Class Information Pane.</p>
+
+						<br>
+
+						<div class="wrappedImage"><img id="expandableImage3" src="./INFO3220-3_files/DialogProjectSelection.jpg" alt="Project Setup3"></div>
+
+						<p>Unlike last week where we skipped this screen we need to update the values to use a <b>QDialog project.</b> This project was selected as it is the easist project to get started with graphics in Qt.</p>
+
+						<p>If you don't like the name Dialog you can rename it to anything you like. This step is optional, but if you choose to rename this class be mindful that it will be referred to it as the Dialog class for the rest of the tutorial.</p> 
+
+						<p>Once you have selected a name for this class press next and then click finish. As a final step to make sure your graphical C++ application is working, press run and a blank grey panel should appear on the screen.<!----> It is on this panel that we will have moving planets by the end of today's tutorial.&lt;--&gt;</p>
+
+						<h2>Drawing an Ellipse</h2>
+
+						<p>Before you jump into animations let's first learn how to draw static objects in Qt. The first object you will draw will be an ellipse.</p>
+
+						<p>To do this open up your <b>dialog.h</b> file and add the following code to the header file:</p>
+
+						<pre>protected:
+    void paintEvent(QPaintEvent *event);
+						</pre>
+
+						<p>This method should come after all <code>public</code> methods. This is an inbuilt Qt function that is called whenever <code>update()</code> is called on the dialog class. It is this method which you can also use to create animations by adding a timer; which you will do later in the tutorial.</p>
+
+						<p>While you have the header file open, include the <a href="http://qt-project.org/doc/qt-4.8/qpainter.html">QPainter</a> library. QPainter is an important library which allows for the rendering of shapes in the dialog window. A number of QPainter features will be explored throughout this tutorial.</p>
+
+						<p>In <b>dialog.cpp</b> add the following code to the implementation method to apply the QPainter.</p>
+
+						<pre>void Dialog::paintEvent(QPaintEvent *event)
+{
+    QPainter painter(this);
+    painter.drawEllipse(30, 30, 100, 100);
+}
+						</pre>
+
+						<p>The final step now is to make sure that you call the paint method. To do this add the following line in the constructor of the Dialog class.</p>
+
+						<pre>this-&gt;update();
+						</pre>
+
+						<div class="wrappedImage"><img id="expandableImage4" src="./INFO3220-3_files/FirstGUI.jpg" alt="Your first circle"></div>
+
+						<p>You are now ready to run your application. If you run it now you should see a circle on the screen.</p>
+
+						<div class="alert alert-info"><h4>Info</h4>If you wish to change the shape or placement of the ellipse feel free to edit the four parameters of the <code>drawEllipse(...)</code> method. The first two are the x and y coordinates for the placement of the ellipse and the last two are the size in terms of x and y.</div>
+
+						<h2>Adding a splash of Colour</h2>
+
+						<p>The current ellipse you have rendered uses the default paint settings which is a border of 1 pixel in black and no fill colour.</p>
+
+						<p>Instead of the default settings in this section you will update your Dialog class so that it renders a yellow ellipse with a black border which is 3 pixels in width.</p>
+
+						<p>To do this we will use two QPainter features. The <a href="http://qt-project.org/doc/qt-4.8/qpen.html">QPen</a> and the <a href="http://qt-project.org/doc/qt-4.8/qbrush.html">QBrush</a>. The QPen is a Qt library used for rendering lines. The QBrush is used for painting inside of a shape. To render a yellow ellipse with a border of 3 pixels include the following code fragment in your paint method.</p> 
+
+						<pre>// add after the creation of the painter object
+QPen pen;
+pen.setWidth(3);
+pen.setColor(Qt::black);
+QBrush brush(Qt::yellow);
+
+painter.setPen (pen);
+painter.setBrush(brush);
+// add before the painter draws the ellipse
+						</pre>
+
+						<div class="wrappedImage"><img id="expandableImage5" src="./INFO3220-3_files/ColouredBall.JPG" alt="Yellow Ellipse"></div>
+
+						<p>If you now rerun your application the circle should have changed colour and the border should have increased to 3 pixels.</p>
+
+						<div class="alert alert-info"><h4>Info</h4>It is important to note that we have used the inbuilt Qt Colors (yes you need to misspell colour on purpose). If you wish to use your own colours you can simply include a hex code as a string; which you will do in the next exercise.</div>
+
+						<h2>Changing the Background Colour and Using Polygons</h2>
+
+						<p>Your aim now is to finish off your first Qt artwork. If you consider the yellow circle as the sun (yes we realise that is quite a stretch) then if you change the background to sky blue and add a rather simple picture of a house your Dialog box will be reminiscent of the artwork you had hanging on the fridge as you were growing up.</p>
+
+						<p>To create this masterpiece first update the background of the window. To update the background include this code in the constructor of the Dialog class.</p>
+
+						<pre>this-&gt;setStyleSheet("background-color: #82CAFF;");
+						</pre>
+
+						<p>If you rerun your application you will see that the background now matches the hex code colour <b>#82CAFF</b>; known as <a href="http://www.computerhope.com/cgi-bin/htmlcolor.pl?c=82CAFF">sky blue</a>.</p>
+
+						<p>To draw the house you will need to include the following code after the <code>drawEllipse()</code> method in the <code>paintEvent()</code> method.</p>
+
+						<pre>    brush.setColor("#C36241");
+    painter.setBrush(brush);
+    pen.setWidth(1);
+
+    QPolygon roof;
+    roof.putPoints(0, 3, 250, 260, 290, 220, 330, 260);
+    painter.drawPolygon(roof);
+
+    brush.setColor("#835C3B");
+    painter.setBrush(brush);
+    
+    QPolygon house;
+    house.putPoints(0, 4, 260, 260, 260, 299, 320, 299, 320, 260);
+    painter.drawPolygon(house);
+						</pre>
+
+						<div class="wrappedImage"><img id="expandableImage6" src="./INFO3220-3_files/TheHouse.JPG" alt="Your First Artwork"></div>
+
+						<p>If you run your code now you should see the image on the right; if not look over your code and see what is missing. This is a simple demonstration of how the QPolygon class works in Qt. This is an important library that you will need to use as part of this course (perhaps to draw blocks for space invaders) and is useful for drawing all polygons with 3 or more points.</p>
+
+						<p>The first two arguments of the constructor are the index of the first point, which should almost always be 0, and then the number of points you will include. For example, a triangle needs 3 points and a rectangle needs 4. The remaining integers are pairs of x and y coordinates. For more information on the <a href="http://qt-project.org/doc/qt-4.8/qpolygon.html"> QPolygon</a> class visit the Qt API.</p>
+
+					</div>
+					<div id="section3">
+						<h1>Making the graphics move</h1>
+
+						<h2>Update the Dialog class</h2>
+
+						<p>To begin this exercise you will need to disable the masterpiece you have just created to make some room for the planet animation. To do this replace your paint method with the following code.</p>
+
+						<pre>void Dialog::paintEvent(QPaintEvent *event)
+{
+      // code for this exercise goes here
+}
+						</pre>
+
+
+						<h2>Create a Space Invader Dialog</h2>
+
+						<p>Construct a new class called BattleSphere and store it in the file battlesphere.h</p>
+
+<pre>#ifndef BATTLESPHERE_H
+#define BATTLESPHERE_H
+#include &lt;QDialog&gt;
+#include &lt;QPainter&gt;
+#include &lt;QPixmap&gt;
+namespace si {
+    class BattleSphere : public QDialog
+    {
+        Q_OBJECT
+        QPixmap defender;
+        QPixmap bullet;
+        int dx = 0;
+        int dy = 350;
+        int ds = 3;
+        int bx = -1000;
+        int by = -1000;
+        int bs = 10;
+    public:
+        BattleSphere(QWidget *parent = nullptr);
+        ~BattleSphere();
+    protected:
+        void paintEvent(QPaintEvent *event);
+    public slots:
+        void nextFrame();
+    };
+} // end namespace si
+#endif // BATTLESPHERE_H </pre>
+
+The task of this dialog box is to render the spaceship and the laser beams. We have two bitmaps that represent the defender, i.e., our spaceship, and the bullet, i.e., our laser beam. The member variables dx, dy, and ds represent the position and stride of the defender. The member variables bx, by, bs represent the position and stride of the bullet.  The class has a constructor, destructor, a paintEvent method and a nextFrame method.  
+
+The implementation of the class is listed below:
+<pre>#include "battlesphere.h"
+#include &lt;QTimer&gt;
+namespace si {
+    BattleSphere::BattleSphere(QWidget *parent) : QDialog(parent) {
+        defender.load(":/images/defender.png");
+        bullet.load(":/images/fireball.png");
+        setStyleSheet("background-color: #000000;");
+        this-&gt;resize(600, 400);
+        update();
+        QTimer *timer = new QTimer(this);
+        connect(timer, SIGNAL(timeout()), this, SLOT(nextFrame()));
+        timer-&gt;start(32);
+    }
+    BattleSphere::~BattleSphere() {}
+    void BattleSphere::paintEvent(QPaintEvent *event) {
+        QPainter painter(this);
+        painter.drawPixmap(dx, dy, defender);
+        painter.drawPixmap(bx, by, bullet);
+    }
+    void BattleSphere::nextFrame() {
+        // animate the defender
+        int maxX = this-&gt;width()-defender.width();
+        dx += ds;
+        if(dx &gt;= maxX){
+            dx = (2*maxX)-dx;
+            ds *= -1;
+        } else if (dx &lt;= 0) {
+            dx *= -1;
+            ds *= -1;
+        }
+        // shoot or animate the bullet
+        if(by &lt;= -100){
+            bx = dx + (defender.width()/2) - (bullet.width()/2);
+            by = dy - bullet.height();
+        } else {
+            by -= bs;
+        }
+        update();
+    }
+} // end namespace si
+</pre>
+                                                <p> First, the constructor loads the bitmaps of the defender and the bullet via the load() method. </p> 
+						<p> Second, for drawing the space ship and the bullet periodically a timer is added. Timers are used to repetitively call a particular method. For this exercise you will use a <a href="http://qt-project.org/doc/qt-4.8/qtimer.html">QTimer</a>. When using a QTimer the method you wish to call must be marked as a slot. A <code>slot</code> method is added to the Dialog class header file and has the following signature.</p>
+
+						<pre>public slots:
+    void nextFrame();
+						</pre>
+
+						For the timer, the QTimer library is included by adding <code>#include &lt;QTimer&gt;</code> to the header file. The QTimer to call the slot is established in the constructor in the following way:
+
+						<pre>QTimer *timer = new QTimer(this);
+connect(timer, SIGNAL(timeout()), this, SLOT(nextFrame()));
+timer-&gt;start(32);
+						</pre>
+						<p>Ideally you would place this in a separate method which you would call to start an animation, but alternatively you could just place this in the constructor so that when the Dialog is constructed the animation begins.</p>
+
+						<p>For the animation to run, however,  the nextFrame() method must be implemented. It updates the position of the defender and bullet at each time step of the simulation. The <code>nextFrame()</code> method runs the game and calls the paint method using the <code>update()</code> method as shown above.</p>
+
+For the implementation, use the main/project files, and the bitmaps stored on <a href="https://github.com/scyptnex/computing/tree/master/Spaceship"> Nic's github repository</a>. 
+
+						<div class="alert alert-info"><h4>Info</h4>Recall the ampersand symbol (&amp;), which means that the variable has been passed as a reference rather than a copy of an object. This is similar to the way in which you may have passed objects in Java, internally it is a C-style pointer. You will spend a large portion of the next tutorial covering references and pointers.</div>
+
+						<div class="alert alert-warning"><h4>Note</h4>This code demonstrates the use of pointers in C++. For now just use this code. Next week's tutorial will discuss how the <a href="http://en.wikipedia.org/wiki/New_(C%2B%2B)" class="alert-link">new</a> keyword works in conjunction with malloc.</div>
+
+
+<!--
+						<p>You are now ready to press play. Check if your animation looks similar to the video below.</p>
+
+						<div class="alert alert-danger"><h4>Warning!</h4>This video has been posted using HTML 5. If it does not work for you consider updating your web browser. For more details on the video tag in html 5 click the following <a href="http://www.w3schools.com/html/html5_video.asp">link</a>.</div>
+
+						<video style="width: 100%;" controls>
+							<source src="vids/TutorialSolution.mp4" type="video/mp4">
+							<source src="vids/TutorialSolution.ogv" type="video/ogg">
+						</video>
+-->
+
+					</div>
+					<div id="section4">
+						<h1>Extension: Try out your artistic flair</h1>
+
+						<p>Once you have completed the game exercise feel free to use the QPen and QBrush libraries to improve the look of the space ship.</p>
+
+						<p>Accelerate/decelerate the time step of the spaceship </p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	<script type="text/javascript">
+		var expandableImage1Clicked = false;
+		$('#expandableImage1').click(function() 
+			{
+				if (expandableImage1Clicked)
+				{
+					expandableImage1Clicked = false;
+					$(this).animate({width: "28%"}, 'slow');
+				}
+				else 
+				{
+					expandableImage1Clicked = true;
+					$(this).animate({width: "100%"}, 'slow');
+				}
+			}
+		);
+		var expandableImage2Clicked = false;
+		$('#expandableImage2').click(function() 
+			{
+				if (expandableImage2Clicked)
+				{
+					expandableImage2Clicked = false;
+					$(this).animate({width: "28%"}, 'slow');
+				}
+				else 
+				{
+					expandableImage2Clicked = true;
+					$(this).animate({width: "100%"}, 'slow');
+				}
+			}
+		);
+		var expandableImage3Clicked = false;
+		$('#expandableImage3').click(function() 
+			{
+				if (expandableImage3Clicked)
+				{
+					expandableImage3Clicked = false;
+					$(this).animate({width: "28%"}, 'slow');
+				}
+				else 
+				{
+					expandableImage3Clicked = true;
+					$(this).animate({width: "100%"}, 'slow');
+				}
+			}
+		);
+		var expandableImage4Clicked = false;
+		$('#expandableImage4').click(function() 
+			{
+				if (expandableImage4Clicked)
+				{
+					expandableImage4Clicked = false;
+					$(this).animate({width: "28%"}, 'slow');
+				}
+				else 
+				{
+					expandableImage4Clicked = true;
+					$(this).animate({width: "100%"}, 'slow');
+				}
+			}
+		);
+		var expandableImage5Clicked = false;
+		$('#expandableImage5').click(function() 
+			{
+				if (expandableImage5Clicked)
+				{
+					expandableImage5Clicked = false;
+					$(this).animate({width: "28%"}, 'slow');
+				}
+				else 
+				{
+					expandableImage5Clicked = true;
+					$(this).animate({width: "100%"}, 'slow');
+				}
+			}
+		);
+		var expandableImage6Clicked = false;
+		$('#expandableImage6').click(function() 
+			{
+				if (expandableImage6Clicked)
+				{
+					expandableImage6Clicked = false;
+					$(this).animate({width: "28%"}, 'slow');
+				}
+				else 
+				{
+					expandableImage6Clicked = true;
+					$(this).animate({width: "100%"}, 'slow');
+				}
+			}
+		);
+
+		function getHeight() {
+			if( typeof( window.innerWidth ) == 'number' ) {
+				return window.innerHeight;
+			} 
+			else if( document.documentElement && ( document.documentElement.clientWidth || document.documentElement.clientHeight ) ) {
+				return document.documentElement.clientHeight;
+			} 
+			else if( document.body && ( document.body.clientWidth || document.body.clientHeight ) ) {
+				return document.body.clientHeight;
+			}
+			return 0;
+		}
+
+	</script>
+
+	
+
+</body><script>function inject(){function a(){function a(a){parent.postMessage({type:"blockedWindow",args:JSON.stringify(a)},l)}function b(a){var b=a[1];return null!=b&&["_blank","_parent","_self","_top"].indexOf(b)<0?b:null}function e(a,b){var c;for(c in a)try{void 0===b[c]&&(b[c]=a[c])}catch(d){}return b}var g=arguments,h=!0,j=null,k=null;if(null!=window.event&&(k=window.event.currentTarget),null==k){for(var m=g.callee;null!=m.arguments&&null!=m.arguments.callee.caller;)m=m.arguments.callee.caller;null!=m.arguments&&m.arguments.length>0&&null!=m.arguments[0].currentTarget&&(k=m.arguments[0].currentTarget)}null!=k&&(k instanceof Window||k===document||null!=k.URL&&null!=k.body||null!=k.nodeName&&("body"==k.nodeName.toLowerCase()||"#document"==k.nodeName.toLowerCase()))?(window.pbreason="Blocked a new window opened with URL: "+g[0]+" because it was triggered by the "+k.nodeName+" element",h=!1):h=!0;document.webkitFullscreenElement||document.mozFullscreenElement||document.fullscreenElement;if(((new Date).getTime()-d<1e3||isNaN(d)&&c())&&(window.pbreason="Blocked a new window opened with URL: "+g[0]+" because a full screen was just initiated while opening this url.",document.exitFullscreen?document.exitFullscreen():document.mozCancelFullScreen?document.mozCancelFullScreen():document.webkitCancelFullScreen&&document.webkitCancelFullScreen(),h=!1),1==h){j=f.apply(this,g);var n=b(g);if(null!=n&&(i[n]=j),j!==window){var o=(new Date).getTime(),p=j.blur;j.blur=function(){(new Date).getTime()-o<1e3?(window.pbreason="Blocked a new window opened with URL: "+g[0]+" because a it was blured",j.close(),a(g)):p()}}}else{var q={href:g[0]};q.replace=function(a){q.href=a},j={close:function(){return!0},test:function(){return!0},blur:function(){return!0},focus:function(){return!0},showModelessDialog:function(){return!0},showModalDialog:function(){return!0},prompt:function(){return!0},confirm:function(){return!0},alert:function(){return!0},moveTo:function(){return!0},moveBy:function(){return!0},resizeTo:function(){return!0},resizeBy:function(){return!0},scrollBy:function(){return!0},scrollTo:function(){return!0},getSelection:function(){return!0},onunload:function(){return!0},print:function(){return!0},open:function(){return this},opener:window,closed:!1,innerHeight:480,innerWidth:640,name:g[1],location:q,document:{location:q}},e(window,j),j.window=j;var n=b(g);if(null!=n)try{i[n].close()}catch(r){}setTimeout(function(){var b;b=j.location instanceof Object?j.document.location instanceof Object?null!=q.href?q.href:g[0]:j.document.location:j.location,g[0]=b,a(g)},100)}return j}function b(a){d=a?(new Date).getTime():0/0}function c(){return document.fullScreenElement&&null!==document.fullScreenElement||null!=document.mozFullscreenElement||null!=document.webkitFullscreenElement}var d,e="originalOpenFunction",f=window.open,g=document.createElement,h=document.createEvent,i={},j=0,k=null,l=window.location!=window.parent.location?document.referrer:document.location;window[e]=window.open,window.open=function(){try{return a.apply(this,arguments)}catch(b){return null}},document.createElement=function(){var a=g.apply(document,arguments);if("a"==arguments[0]||"A"==arguments[0]){j=(new Date).getTime();var b=a.dispatchEvent;a.dispatchEvent=function(c){return null!=c.type&&"click"==(""+c.type).toLocaleLowerCase()?(window.pbreason="blocked due to an explicit dispatchEvent event with type 'click' on an 'a' tag",parent.postMessage({type:"blockedWindow",args:JSON.stringify({0:a.href})},l),!0):b(c)},k=a}return a},document.createEvent=function(){try{return arguments[0].toLowerCase().indexOf("mouse")>=0&&(new Date).getTime()-j<=50?(window.pbreason="Blocked because 'a' element was recently created and "+arguments[0]+" event was created shortly after",arguments[0]=k.href,parent.postMessage({type:"blockedWindow",args:JSON.stringify({0:k.href})},l),null):h.apply(document,arguments)}catch(a){}},document.addEventListener("fullscreenchange",function(){b(document.fullscreen)},!1),document.addEventListener("mozfullscreenchange",function(){b(document.mozFullScreen)},!1),document.addEventListener("webkitfullscreenchange",function(){b(document.webkitIsFullScreen)},!1)} inject()</script></html>
