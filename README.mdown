@@ -1,0 +1,6 @@
+#TO LEARN
+1. C
+2. C++
+3. Javascript
+4. HTML/CSS
+5. NLP
